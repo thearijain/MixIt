@@ -14,6 +14,7 @@
 		D5657E2322CC3D720080A378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5657E2122CC3D720080A378 /* LaunchScreen.storyboard */; };
 		D5657E2E22CC3D720080A378 /* DjApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5657E2D22CC3D720080A378 /* DjApplicationTests.swift */; };
 		D5657E3922CC3D720080A378 /* DjApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5657E3822CC3D720080A378 /* DjApplicationUITests.swift */; };
+		D599CE6D22D6965A00620F96 /* SamplerPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D599CE6C22D6965A00620F96 /* SamplerPopupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D5657E3422CC3D720080A378 /* DjApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DjApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5657E3822CC3D720080A378 /* DjApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DjApplicationUITests.swift; sourceTree = "<group>"; };
 		D5657E3A22CC3D720080A378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D599CE6C22D6965A00620F96 /* SamplerPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplerPopupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				D5657E1822CC3D710080A378 /* AppDelegate.swift */,
 				D5657E1A22CC3D710080A378 /* ViewController.swift */,
+				D599CE6C22D6965A00620F96 /* SamplerPopupViewController.swift */,
 				D5657E1C22CC3D710080A378 /* Main.storyboard */,
 				D5657E1F22CC3D720080A378 /* Assets.xcassets */,
 				D5657E2122CC3D720080A378 /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D599CE6D22D6965A00620F96 /* SamplerPopupViewController.swift in Sources */,
 				D5657E1B22CC3D710080A378 /* ViewController.swift in Sources */,
 				D5657E1922CC3D710080A378 /* AppDelegate.swift in Sources */,
 			);
