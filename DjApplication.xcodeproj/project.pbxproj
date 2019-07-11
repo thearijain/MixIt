@@ -15,6 +15,9 @@
 		D5657E2E22CC3D720080A378 /* DjApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5657E2D22CC3D720080A378 /* DjApplicationTests.swift */; };
 		D5657E3922CC3D720080A378 /* DjApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5657E3822CC3D720080A378 /* DjApplicationUITests.swift */; };
 		D599CE6D22D6965A00620F96 /* SamplerPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D599CE6C22D6965A00620F96 /* SamplerPopupViewController.swift */; };
+		D599CE7122D6B52E00620F96 /* ka-ching.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D599CE7022D6B52E00620F96 /* ka-ching.mp3 */; };
+		D599CE7322D6BF0A00620F96 /* youu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D599CE7222D6BF0A00620F96 /* youu.mp3 */; };
+		D599CE7B22D6C52200620F96 /* airhorn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D599CE7A22D6C52200620F96 /* airhorn.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		D5657E3822CC3D720080A378 /* DjApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DjApplicationUITests.swift; sourceTree = "<group>"; };
 		D5657E3A22CC3D720080A378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D599CE6C22D6965A00620F96 /* SamplerPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplerPopupViewController.swift; sourceTree = "<group>"; };
+		D599CE7022D6B52E00620F96 /* ka-ching.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ka-ching.mp3"; sourceTree = "<group>"; };
+		D599CE7222D6BF0A00620F96 /* youu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = youu.mp3; sourceTree = "<group>"; };
+		D599CE7A22D6C52200620F96 /* airhorn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = airhorn.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,7 @@
 				D5657E1F22CC3D720080A378 /* Assets.xcassets */,
 				D5657E2122CC3D720080A378 /* LaunchScreen.storyboard */,
 				D5657E2422CC3D720080A378 /* Info.plist */,
+				D599CE6F22D6B4E600620F96 /* Sampler Sounds */,
 			);
 			path = DjApplication;
 			sourceTree = "<group>";
@@ -126,6 +133,16 @@
 				D5657E3A22CC3D720080A378 /* Info.plist */,
 			);
 			path = DjApplicationUITests;
+			sourceTree = "<group>";
+		};
+		D599CE6F22D6B4E600620F96 /* Sampler Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D599CE7222D6BF0A00620F96 /* youu.mp3 */,
+				D599CE7A22D6C52200620F96 /* airhorn.mp3 */,
+				D599CE7022D6B52E00620F96 /* ka-ching.mp3 */,
+			);
+			path = "Sampler Sounds";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +249,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D599CE7122D6B52E00620F96 /* ka-ching.mp3 in Resources */,
+				D599CE7322D6BF0A00620F96 /* youu.mp3 in Resources */,
 				D5657E2322CC3D720080A378 /* LaunchScreen.storyboard in Resources */,
 				D5657E2022CC3D720080A378 /* Assets.xcassets in Resources */,
+				D599CE7B22D6C52200620F96 /* airhorn.mp3 in Resources */,
 				D5657E1E22CC3D710080A378 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -163,7 +163,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sampler Overlay" translatesAutoresizingMaskIntoConstraints="NO" id="TAT-18-COH">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sampler Overlay Background" translatesAutoresizingMaskIntoConstraints="NO" id="TAT-18-COH">
                                 <rect key="frame" x="388.5" y="119.5" width="213" height="213"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -199,12 +199,34 @@
                                     <action selector="closeSamplerOverlay4:" destination="giX-vr-RFW" eventType="touchUpInside" id="zAt-5i-jee"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1M-uG-fff">
-                                <rect key="frame" x="414" y="144" width="80" height="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zA8-rE-4HU">
+                                <rect key="frame" x="498" y="227" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Air Horn Button"/>
                                 <connections>
-                                    <action selector="playChaChing:" destination="giX-vr-RFW" eventType="touchUpInside" id="je3-b8-ISP"/>
+                                    <action selector="playAirHorn:" destination="giX-vr-RFW" eventType="touchUpInside" id="9dQ-LN-ldE"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgT-VC-gnI">
+                                <rect key="frame" x="411" y="141" width="85" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Cha Ching Button"/>
+                                <connections>
+                                    <action selector="playChaChing:" destination="giX-vr-RFW" eventType="touchUpInside" id="N0x-sZ-1Cl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnG-Oa-PAJ">
+                                <rect key="frame" x="498" y="141" width="85" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Youu Button"/>
+                                <connections>
+                                    <action selector="playYouu:" destination="giX-vr-RFW" eventType="touchUpInside" id="w0n-YE-eAN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0C-f3-GkZ">
+                                <rect key="frame" x="411" y="228" width="85" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Straight Up Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -218,8 +240,10 @@
     </scenes>
     <resources>
         <image name="Add Song to Deck Button" width="29" height="29"/>
+        <image name="Air Horn Button" width="85" height="85"/>
         <image name="Background" width="667" height="417"/>
         <image name="Black Bar At Bottom" width="667" height="53"/>
+        <image name="Cha Ching Button" width="85" height="85"/>
         <image name="Crossfader Slider" width="28" height="47"/>
         <image name="Crossfader without Slider" width="152" height="29"/>
         <image name="Cue Button" width="57" height="60"/>
@@ -230,9 +254,11 @@
         <image name="Middle Section" width="118.5" height="177"/>
         <image name="Play Button" width="57" height="34"/>
         <image name="Sampler Button" width="85" height="26.5"/>
-        <image name="Sampler Overlay" width="213" height="213"/>
+        <image name="Sampler Overlay Background" width="213" height="213"/>
+        <image name="Straight Up Button" width="85" height="85"/>
         <image name="Sync Button" width="115.5" height="26.5"/>
         <image name="Vinyl" width="203" height="215"/>
         <image name="Volume Slider" width="49" height="27"/>
+        <image name="Youu Button" width="85" height="85"/>
     </resources>
 </document>
