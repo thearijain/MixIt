@@ -16,8 +16,12 @@
 		D5657E3922CC3D720080A378 /* DjApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5657E3822CC3D720080A378 /* DjApplicationUITests.swift */; };
 		D599CE6D22D6965A00620F96 /* SamplerPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D599CE6C22D6965A00620F96 /* SamplerPopupViewController.swift */; };
 		D599CE7122D6B52E00620F96 /* ka-ching.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D599CE7022D6B52E00620F96 /* ka-ching.mp3 */; };
-		D599CE7322D6BF0A00620F96 /* youu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D599CE7222D6BF0A00620F96 /* youu.mp3 */; };
 		D599CE7B22D6C52200620F96 /* airhorn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D599CE7A22D6C52200620F96 /* airhorn.mp3 */; };
+		D599CE7D22D7E08500620F96 /* drake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D599CE7C22D7E08500620F96 /* drake.mp3 */; };
+		D599CE7F22D7E39100620F96 /* Skrskr.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D599CE7E22D7E39100620F96 /* Skrskr.mp3 */; };
+		D599CE8322D7E9A700620F96 /* LeftSamplerPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D599CE8222D7E9A700620F96 /* LeftSamplerPopupViewController.swift */; };
+		D599CE8522D803CD00620F96 /* Right Song Selection ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D599CE8422D803CD00620F96 /* Right Song Selection ViewController.swift */; };
+		D599CE8722D9737200620F96 /* mlg-airhorn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D599CE8622D9737200620F96 /* mlg-airhorn.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +57,12 @@
 		D5657E3A22CC3D720080A378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D599CE6C22D6965A00620F96 /* SamplerPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplerPopupViewController.swift; sourceTree = "<group>"; };
 		D599CE7022D6B52E00620F96 /* ka-ching.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ka-ching.mp3"; sourceTree = "<group>"; };
-		D599CE7222D6BF0A00620F96 /* youu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = youu.mp3; sourceTree = "<group>"; };
 		D599CE7A22D6C52200620F96 /* airhorn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = airhorn.mp3; sourceTree = "<group>"; };
+		D599CE7C22D7E08500620F96 /* drake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drake.mp3; sourceTree = "<group>"; };
+		D599CE7E22D7E39100620F96 /* Skrskr.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Skrskr.mp3; sourceTree = "<group>"; };
+		D599CE8222D7E9A700620F96 /* LeftSamplerPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSamplerPopupViewController.swift; sourceTree = "<group>"; };
+		D599CE8422D803CD00620F96 /* Right Song Selection ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Right Song Selection ViewController.swift"; sourceTree = "<group>"; };
+		D599CE8622D9737200620F96 /* mlg-airhorn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "mlg-airhorn.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,8 @@
 				D5657E1822CC3D710080A378 /* AppDelegate.swift */,
 				D5657E1A22CC3D710080A378 /* ViewController.swift */,
 				D599CE6C22D6965A00620F96 /* SamplerPopupViewController.swift */,
+				D599CE8222D7E9A700620F96 /* LeftSamplerPopupViewController.swift */,
+				D599CE8422D803CD00620F96 /* Right Song Selection ViewController.swift */,
 				D5657E1C22CC3D710080A378 /* Main.storyboard */,
 				D5657E1F22CC3D720080A378 /* Assets.xcassets */,
 				D5657E2122CC3D720080A378 /* LaunchScreen.storyboard */,
@@ -138,8 +148,10 @@
 		D599CE6F22D6B4E600620F96 /* Sampler Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				D599CE7222D6BF0A00620F96 /* youu.mp3 */,
 				D599CE7A22D6C52200620F96 /* airhorn.mp3 */,
+				D599CE7E22D7E39100620F96 /* Skrskr.mp3 */,
+				D599CE7C22D7E08500620F96 /* drake.mp3 */,
+				D599CE8622D9737200620F96 /* mlg-airhorn.mp3 */,
 				D599CE7022D6B52E00620F96 /* ka-ching.mp3 */,
 			);
 			path = "Sampler Sounds";
@@ -249,10 +261,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D599CE7F22D7E39100620F96 /* Skrskr.mp3 in Resources */,
+				D599CE7D22D7E08500620F96 /* drake.mp3 in Resources */,
 				D599CE7122D6B52E00620F96 /* ka-ching.mp3 in Resources */,
-				D599CE7322D6BF0A00620F96 /* youu.mp3 in Resources */,
 				D5657E2322CC3D720080A378 /* LaunchScreen.storyboard in Resources */,
 				D5657E2022CC3D720080A378 /* Assets.xcassets in Resources */,
+				D599CE8722D9737200620F96 /* mlg-airhorn.mp3 in Resources */,
 				D599CE7B22D6C52200620F96 /* airhorn.mp3 in Resources */,
 				D5657E1E22CC3D710080A378 /* Main.storyboard in Resources */,
 			);
@@ -280,8 +294,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D599CE6D22D6965A00620F96 /* SamplerPopupViewController.swift in Sources */,
+				D599CE8322D7E9A700620F96 /* LeftSamplerPopupViewController.swift in Sources */,
 				D5657E1B22CC3D710080A378 /* ViewController.swift in Sources */,
 				D5657E1922CC3D710080A378 /* AppDelegate.swift in Sources */,
+				D599CE8522D803CD00620F96 /* Right Song Selection ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

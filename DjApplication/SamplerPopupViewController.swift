@@ -36,7 +36,7 @@ class SamplerPopupViewController: UIViewController {
     //Plays the Airhorn from the sampler
     @IBAction func playAirHorn(_ sender: Any) {
         do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "airhorn", ofType: "mp3")!))
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "mlg-airhorn", ofType: "mp3")!))
             audioPlayer.prepareToPlay()
         }
         catch {
@@ -45,10 +45,22 @@ class SamplerPopupViewController: UIViewController {
         audioPlayer.play()
     }
     
-    //Plays Youu from the sampler
-    @IBAction func playYouu(_ sender: Any) {
+    //Plays Drake from the sampler
+    @IBAction func playDrake(_ sender: Any) {
         do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "youu", ofType: "mp3")!))
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "drake", ofType: "mp3")!))
+            audioPlayer.prepareToPlay()
+        }
+        catch {
+            print("there has been an error")
+        }
+        audioPlayer.play()
+    }
+    
+    //Plays Skrskr from the sampler
+    @IBAction func playSkrskr(_ sender: Any) {
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "Skrskr", ofType: "mp3")!))
             audioPlayer.prepareToPlay()
         }
         catch {
