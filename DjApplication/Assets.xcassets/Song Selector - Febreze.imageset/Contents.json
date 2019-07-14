@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Song Selector - Forbidden Voices.png",
+      "filename" : "Song Selector - Febreze.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Song Selector - Forbidden Voices@2x.png",
+      "filename" : "Song Selector - Febreze@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Song Selector - Forbidden Voices@3x.png",
+      "filename" : "Song Selector - Febreze@3x.png",
       "scale" : "3x"
     }
   ],

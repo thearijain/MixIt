@@ -245,7 +245,7 @@
         <!--View Controller-->
         <scene sceneID="5Uo-TX-s1o">
             <objects>
-                <viewController id="cYw-go-UDt" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="cYw-go-UDt" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B3q-F0-CUX">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -264,8 +264,14 @@
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEi-za-cg8">
-                                                <rect key="frame" x="179" y="46" width="30" height="30"/>
+                                                <rect key="frame" x="3" y="1" width="661" height="61"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="Song Selector - Forbidden Voices"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gK2-a6-zMT">
+                                                <rect key="frame" x="3" y="61" width="661" height="61"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="Song Selector - Secrets"/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -412,6 +418,8 @@
         <image name="Sampler Button" width="85" height="26.5"/>
         <image name="Sampler Overlay Background" width="213" height="213"/>
         <image name="Skrskr Sampler Button" width="85" height="85"/>
+        <image name="Song Selector - Forbidden Voices" width="661" height="61"/>
+        <image name="Song Selector - Secrets" width="661" height="61"/>
         <image name="Song Selector Background" width="667" height="607.5"/>
         <image name="Sync Button" width="115.5" height="26.5"/>
         <image name="Vinyl" width="203" height="215"/>
