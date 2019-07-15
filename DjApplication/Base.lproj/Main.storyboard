@@ -253,7 +253,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhW-es-YXr">
-                                <rect key="frame" x="608" y="80" width="57" height="74"/>
+                                <rect key="frame" x="607" y="80" width="57" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Loop Button"/>
                                 <connections>
@@ -266,7 +266,7 @@
                                 <state key="normal" backgroundImage="Loop Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIl-ei-HXx">
-                                <rect key="frame" x="608" y="232" width="59" height="74"/>
+                                <rect key="frame" x="606" y="232" width="59" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="EQ Button"/>
                             </button>
@@ -276,7 +276,7 @@
                                 <state key="normal" backgroundImage="EQ Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGt-cb-QZU">
-                                <rect key="frame" x="608" y="156" width="57" height="74"/>
+                                <rect key="frame" x="607" y="156" width="57" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Hot Cues Button"/>
                                 <connections>
@@ -318,22 +318,22 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tne-pD-Pez">
                                 <rect key="frame" x="7" y="334" width="57" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Cue Button"/>
+                                <state key="normal" image="new-cue"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjU-rL-qg2">
                                 <rect key="frame" x="604" y="334" width="57" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Cue Button"/>
+                                <state key="normal" image="new-cue"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdP-qP-raR">
                                 <rect key="frame" x="71" y="334" width="57" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="play-pause-button"/>
+                                <state key="normal" image="new-play-pause"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GE1-wO-JNR">
                                 <rect key="frame" x="540" y="334" width="57" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="play-pause-button"/>
+                                <state key="normal" image="new-play-pause"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdg-Lr-YvG">
                                 <rect key="frame" x="145" y="341" width="85" height="27"/>
@@ -511,7 +511,6 @@
         <image name="Cha Ching Button" width="85" height="85"/>
         <image name="Crossfader Slider" width="28" height="47"/>
         <image name="Crossfader without Slider" width="152" height="29"/>
-        <image name="Cue Button" width="57" height="60"/>
         <image name="Drake Sample" width="85" height="85"/>
         <image name="EQ Button" width="58.5" height="74"/>
         <image name="Entire Top Portion" width="667" height="71"/>
@@ -529,6 +528,7 @@
         <image name="Sync Button" width="115.5" height="26.5"/>
         <image name="Vinyl" width="203" height="215"/>
         <image name="Volume Slider" width="49" height="27"/>
-        <image name="play-pause-button" width="57" height="34"/>
+        <image name="new-cue" width="57" height="60"/>
+        <image name="new-play-pause" width="57" height="34"/>
     </resources>
 </document>
