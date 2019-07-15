@@ -314,9 +314,6 @@
                                 <rect key="frame" x="569" y="81" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Add Song to Deck Button"/>
-                                <connections>
-                                    <segue destination="cYw-go-UDt" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="LZs-AU-T3R"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tne-pD-Pez">
                                 <rect key="frame" x="7" y="334" width="57" height="60"/>
@@ -394,116 +391,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.0809595202399" y="124"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="5Uo-TX-s1o">
-            <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="cYw-go-UDt" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="B3q-F0-CUX">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="607.32000000000005"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XaY-IR-q6O">
-                                <rect key="frame" x="0.0" y="20" width="667" height="607.5"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBs-tt-Scl">
-                                        <rect key="frame" x="0.0" y="0.0" width="667" height="607.5"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Song Selector Background" translatesAutoresizingMaskIntoConstraints="NO" id="6R6-3c-J1v">
-                                                <rect key="frame" x="0.0" y="-18" width="667" height="607.5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="600" id="5EO-UK-R4X"/>
-                                                    <constraint firstAttribute="width" constant="667" id="HHN-7y-fYB"/>
-                                                </constraints>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEi-za-cg8">
-                                                <rect key="frame" x="3" y="0.0" width="661" height="61"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" backgroundImage="Song Selector - Forbidden Voices"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gK2-a6-zMT">
-                                                <rect key="frame" x="3" y="60" width="661" height="61"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" backgroundImage="Song Selector - Secrets"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUv-m0-usP">
-                                                <rect key="frame" x="3" y="120" width="661" height="61"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" backgroundImage="Song Selector - Pursuit of Happiness"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bX2-vy-Fah">
-                                                <rect key="frame" x="3" y="180" width="661" height="61"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" backgroundImage="Song Selector - Purple Lamborghini"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jt0-bn-ht3">
-                                                <rect key="frame" x="3" y="240" width="661" height="61"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" backgroundImage="Song Selector - Dj Got Us Fallin In Love Again"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="726-H4-D1A">
-                                                <rect key="frame" x="3" y="300" width="661" height="61"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" backgroundImage="Song Selector - Sexy Bitch"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qv8-Ut-wi5">
-                                                <rect key="frame" x="3" y="360" width="661" height="61"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" backgroundImage="Song Selector - Febreze"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OsX-HL-uqH">
-                                                <rect key="frame" x="3" y="420" width="661" height="61"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" backgroundImage="Song Selector - Yeah"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iki-Zt-KfJ">
-                                                <rect key="frame" x="3" y="480" width="661" height="61"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" backgroundImage="Song Selector - Magenta Riddim"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYO-Ih-0yf">
-                                                <rect key="frame" x="3" y="539" width="661" height="61"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" backgroundImage="Song Selector - Get Low"/>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="6R6-3c-J1v" firstAttribute="top" secondItem="jBs-tt-Scl" secondAttribute="top" constant="-18" id="Bxw-AY-i2Y"/>
-                                            <constraint firstItem="6R6-3c-J1v" firstAttribute="leading" secondItem="jBs-tt-Scl" secondAttribute="leading" id="Fvl-MB-yap"/>
-                                            <constraint firstAttribute="trailing" secondItem="6R6-3c-J1v" secondAttribute="trailing" id="Kv3-WG-0zt"/>
-                                            <constraint firstAttribute="bottom" secondItem="6R6-3c-J1v" secondAttribute="bottom" constant="5.5" id="P5N-I1-wZL"/>
-                                            <constraint firstItem="6R6-3c-J1v" firstAttribute="width" secondItem="jBs-tt-Scl" secondAttribute="width" id="WHi-QZ-j33"/>
-                                            <constraint firstItem="6R6-3c-J1v" firstAttribute="height" secondItem="jBs-tt-Scl" secondAttribute="height" id="qdZ-P9-wvq"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="jBs-tt-Scl" secondAttribute="bottom" constant="-12.5" id="Hst-mz-HoX"/>
-                                    <constraint firstItem="jBs-tt-Scl" firstAttribute="leading" secondItem="XaY-IR-q6O" secondAttribute="leading" id="Ihm-LX-vmd"/>
-                                    <constraint firstAttribute="trailing" secondItem="jBs-tt-Scl" secondAttribute="trailing" id="Unu-1R-GXQ"/>
-                                    <constraint firstItem="jBs-tt-Scl" firstAttribute="width" secondItem="XaY-IR-q6O" secondAttribute="width" id="Yzc-sz-uvm"/>
-                                    <constraint firstItem="jBs-tt-Scl" firstAttribute="top" secondItem="XaY-IR-q6O" secondAttribute="top" id="igW-Jz-OiS"/>
-                                    <constraint firstItem="jBs-tt-Scl" firstAttribute="height" secondItem="XaY-IR-q6O" secondAttribute="height" id="zNz-f3-jJg"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="IfK-Ux-AgK" firstAttribute="trailing" secondItem="XaY-IR-q6O" secondAttribute="trailing" id="7aG-a8-nlZ"/>
-                            <constraint firstItem="XaY-IR-q6O" firstAttribute="width" secondItem="B3q-F0-CUX" secondAttribute="width" id="IoL-cZ-A7d"/>
-                            <constraint firstItem="XaY-IR-q6O" firstAttribute="top" secondItem="IfK-Ux-AgK" secondAttribute="top" id="PXo-K4-gN2"/>
-                            <constraint firstItem="XaY-IR-q6O" firstAttribute="leading" secondItem="IfK-Ux-AgK" secondAttribute="leading" id="X8a-SF-6o0"/>
-                            <constraint firstItem="XaY-IR-q6O" firstAttribute="height" secondItem="B3q-F0-CUX" secondAttribute="height" id="j4I-lW-etC"/>
-                            <constraint firstItem="IfK-Ux-AgK" firstAttribute="bottom" secondItem="XaY-IR-q6O" secondAttribute="bottom" id="jq3-Ee-ND8"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="IfK-Ux-AgK"/>
-                    </view>
-                    <size key="freeformSize" width="667" height="607.32000000000005"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mJ1-7E-XBw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="848.72563718140941" y="-1048"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7xD-iS-nas">
@@ -639,17 +526,6 @@
         <image name="Sampler Button" width="85" height="26.5"/>
         <image name="Sampler Overlay Background" width="213" height="213"/>
         <image name="Skrskr Sampler Button" width="85" height="85"/>
-        <image name="Song Selector - Dj Got Us Fallin In Love Again" width="661" height="61"/>
-        <image name="Song Selector - Febreze" width="661" height="61"/>
-        <image name="Song Selector - Forbidden Voices" width="661" height="61"/>
-        <image name="Song Selector - Get Low" width="661" height="61"/>
-        <image name="Song Selector - Magenta Riddim" width="661" height="61"/>
-        <image name="Song Selector - Purple Lamborghini" width="661" height="61"/>
-        <image name="Song Selector - Pursuit of Happiness" width="661" height="61"/>
-        <image name="Song Selector - Secrets" width="661" height="61"/>
-        <image name="Song Selector - Sexy Bitch" width="661" height="61"/>
-        <image name="Song Selector - Yeah" width="661" height="61"/>
-        <image name="Song Selector Background" width="667" height="607.5"/>
         <image name="Sync Button" width="115.5" height="26.5"/>
         <image name="Vinyl" width="203" height="215"/>
         <image name="Volume Slider" width="49" height="27"/>
