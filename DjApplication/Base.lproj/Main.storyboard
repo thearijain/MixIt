@@ -178,12 +178,12 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdP-qP-raR">
                                 <rect key="frame" x="71" y="334" width="57" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Play Button"/>
+                                <state key="normal" image="play-pause-button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GE1-wO-JNR">
                                 <rect key="frame" x="540" y="334" width="57" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Play Button"/>
+                                <state key="normal" image="play-pause-button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdg-Lr-YvG">
                                 <rect key="frame" x="145" y="341" width="85" height="27"/>
@@ -414,7 +414,6 @@
         <image name="Hot Cues Button" width="57" height="74"/>
         <image name="Loop Button" width="57" height="74"/>
         <image name="Middle Section" width="118.5" height="177"/>
-        <image name="Play Button" width="57" height="34"/>
         <image name="Sampler Button" width="85" height="26.5"/>
         <image name="Sampler Overlay Background" width="213" height="213"/>
         <image name="Skrskr Sampler Button" width="85" height="85"/>
@@ -424,5 +423,6 @@
         <image name="Sync Button" width="115.5" height="26.5"/>
         <image name="Vinyl" width="203" height="215"/>
         <image name="Volume Slider" width="49" height="27"/>
+        <image name="play-pause-button" width="57" height="34"/>
     </resources>
 </document>
