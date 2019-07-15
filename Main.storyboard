@@ -94,78 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F2C-J1-bm5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-573" y="1873"/>
-        </scene>
-        <!--Left Hot Cues View Controller-->
-        <scene sceneID="QCN-Ji-whx">
-            <objects>
-                <viewController id="dZe-Hl-7Or" customClass="LeftHotCuesViewController" customModule="DjApplication" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qGy-Kd-l3j">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hot Cues Background" translatesAutoresizingMaskIntoConstraints="NO" id="ELC-QE-ncj">
-                                <rect key="frame" x="61.5" y="84.5" width="213" height="213"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LX5-gU-SHW">
-                                <rect key="frame" x="83" y="106" width="85" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Hot Cues - Green"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3An-mD-Vi1">
-                                <rect key="frame" x="170" y="106" width="85" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Hot Cues - Blue"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vd-nC-A5U">
-                                <rect key="frame" x="83" y="193" width="85" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Hot Cues - Purple"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjN-BR-Fut">
-                                <rect key="frame" x="170" y="193" width="85" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Hot Cues - Yellow"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56Z-gm-faE">
-                                <rect key="frame" x="272" y="0.0" width="395" height="375"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="closePopUp:" destination="dZe-Hl-7Or" eventType="touchUpInside" id="nB1-EC-kxh"/>
-                                    <action selector="closePopUp:" destination="aus-8m-inS" eventType="touchUpInside" id="ufc-jr-hjB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsA-Q4-Qpt">
-                                <rect key="frame" x="0.0" y="0.0" width="275" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="closePopUp:" destination="dZe-Hl-7Or" eventType="touchUpInside" id="MvY-Ng-0cz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNn-Ts-dYS">
-                                <rect key="frame" x="0.0" y="85" width="63" height="291"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="closePopUp:" destination="dZe-Hl-7Or" eventType="touchUpInside" id="1z4-HW-Vmh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDH-HJ-cbV">
-                                <rect key="frame" x="61" y="296" width="214" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="closePopUp:" destination="dZe-Hl-7Or" eventType="touchUpInside" id="0IO-jX-vP7"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="0.0042363556338028173" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="2yb-uD-h4X"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X3r-eR-9un" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="aus-8m-inS" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="-573" y="998"/>
+            <point key="canvasLocation" x="-573.46326836581716" y="124"/>
         </scene>
         <!--Right Hot Cues View Controller-->
         <scene sceneID="Hx1-iK-Nee">
@@ -238,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uVO-wt-UpE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="998"/>
+            <point key="canvasLocation" x="848.72563718140941" y="1008.8"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -256,9 +185,6 @@
                                 <rect key="frame" x="608" y="80" width="57" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Loop Button"/>
-                                <connections>
-                                    <segue destination="gx7-rs-UGI" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="HhR-Sb-wcu"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvU-C7-B1r">
                                 <rect key="frame" x="4" y="81" width="57" height="74"/>
@@ -287,9 +213,6 @@
                                 <rect key="frame" x="4" y="156" width="57" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Hot Cues Button"/>
-                                <connections>
-                                    <segue destination="dZe-Hl-7Or" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="iaB-Oe-7O3"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Black Bar At Bottom" translatesAutoresizingMaskIntoConstraints="NO" id="CVc-c0-C5K">
                                 <rect key="frame" x="0.0" y="320" width="667" height="53"/>
@@ -404,13 +327,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XaY-IR-q6O">
-                                <rect key="frame" x="0.0" y="20" width="667" height="607.5"/>
+                                <rect key="frame" x="0.0" y="20" width="667" height="587.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBs-tt-Scl">
-                                        <rect key="frame" x="0.0" y="0.0" width="667" height="607.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="667" height="587.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Song Selector Background" translatesAutoresizingMaskIntoConstraints="NO" id="6R6-3c-J1v">
-                                                <rect key="frame" x="0.0" y="-18" width="667" height="607.5"/>
+                                                <rect key="frame" x="0.0" y="-18" width="667" height="587.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="600" id="5EO-UK-R4X"/>
                                                     <constraint firstAttribute="width" constant="667" id="HHN-7y-fYB"/>
@@ -505,27 +428,6 @@
             </objects>
             <point key="canvasLocation" x="848.72563718140941" y="-1048"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="7xD-iS-nas">
-            <objects>
-                <viewController id="gx7-rs-UGI" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VCb-z0-iY4">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cdD-Us-233">
-                                <rect key="frame" x="374" y="81" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="8Nr-U0-Jb3"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YVa-rn-o3y" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="849" y="124"/>
-        </scene>
         <!--Sampler Popup View Controller-->
         <scene sceneID="nxd-Py-aQj">
             <objects>
@@ -613,7 +515,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nUI-rH-3k7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="1873"/>
+            <point key="canvasLocation" x="848.72563718140941" y="124"/>
         </scene>
     </scenes>
     <resources>
