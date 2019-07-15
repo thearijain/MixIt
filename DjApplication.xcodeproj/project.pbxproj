@@ -24,6 +24,8 @@
 		D599CE8322D7E9A700620F96 /* LeftSamplerPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D599CE8222D7E9A700620F96 /* LeftSamplerPopupViewController.swift */; };
 		D599CE8522D803CD00620F96 /* Right Song Selection ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D599CE8422D803CD00620F96 /* Right Song Selection ViewController.swift */; };
 		D599CE8722D9737200620F96 /* mlg-airhorn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D599CE8622D9737200620F96 /* mlg-airhorn.mp3 */; };
+		D5C787F022DC039200D92904 /* RightHotCuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C787EF22DC039100D92904 /* RightHotCuesViewController.swift */; };
+		D5C787F422DC0C7A00D92904 /* LeftHotCuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C787F322DC0C7A00D92904 /* LeftHotCuesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		D599CE8222D7E9A700620F96 /* LeftSamplerPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSamplerPopupViewController.swift; sourceTree = "<group>"; };
 		D599CE8422D803CD00620F96 /* Right Song Selection ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Right Song Selection ViewController.swift"; sourceTree = "<group>"; };
 		D599CE8622D9737200620F96 /* mlg-airhorn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "mlg-airhorn.mp3"; sourceTree = "<group>"; };
+		D5C787EF22DC039100D92904 /* RightHotCuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightHotCuesViewController.swift; sourceTree = "<group>"; };
+		D5C787F322DC0C7A00D92904 /* LeftHotCuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftHotCuesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 				D5657E1A22CC3D710080A378 /* ViewController.swift */,
 				D599CE6C22D6965A00620F96 /* SamplerPopupViewController.swift */,
 				D599CE8222D7E9A700620F96 /* LeftSamplerPopupViewController.swift */,
+				D5C787F322DC0C7A00D92904 /* LeftHotCuesViewController.swift */,
+				D5C787EF22DC039100D92904 /* RightHotCuesViewController.swift */,
 				D599CE8422D803CD00620F96 /* Right Song Selection ViewController.swift */,
 				D5657E1C22CC3D710080A378 /* Main.storyboard */,
 				D5657E1F22CC3D720080A378 /* Assets.xcassets */,
@@ -303,7 +309,9 @@
 				D599CE8322D7E9A700620F96 /* LeftSamplerPopupViewController.swift in Sources */,
 				D5657E1B22CC3D710080A378 /* ViewController.swift in Sources */,
 				D5657E1922CC3D710080A378 /* AppDelegate.swift in Sources */,
+				D5C787F022DC039200D92904 /* RightHotCuesViewController.swift in Sources */,
 				D599CE8522D803CD00620F96 /* Right Song Selection ViewController.swift in Sources */,
+				D5C787F422DC0C7A00D92904 /* LeftHotCuesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
