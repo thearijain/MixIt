@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FE5408D22DC1A9400C2F0F6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FE5408C22DC1A9400C2F0F6 /* icon.png */; };
+		5FE5408E22DC1A9400C2F0F6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FE5408C22DC1A9400C2F0F6 /* icon.png */; };
 		D5657E1922CC3D710080A378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5657E1822CC3D710080A378 /* AppDelegate.swift */; };
 		D5657E1B22CC3D710080A378 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5657E1A22CC3D710080A378 /* ViewController.swift */; };
 		D5657E1E22CC3D710080A378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5657E1C22CC3D710080A378 /* Main.storyboard */; };
@@ -42,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5FE5408C22DC1A9400C2F0F6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../../Downloads/1x/icon.png; sourceTree = "<group>"; };
 		D5657E1522CC3D710080A378 /* DjApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DjApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5657E1822CC3D710080A378 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5657E1A22CC3D710080A378 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +135,7 @@
 			children = (
 				D5657E2D22CC3D720080A378 /* DjApplicationTests.swift */,
 				D5657E2F22CC3D720080A378 /* Info.plist */,
+				5FE5408C22DC1A9400C2F0F6 /* icon.png */,
 			);
 			path = DjApplicationTests;
 			sourceTree = "<group>";
@@ -261,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FE5408D22DC1A9400C2F0F6 /* icon.png in Resources */,
 				D599CE7F22D7E39100620F96 /* Skrskr.mp3 in Resources */,
 				D599CE7D22D7E08500620F96 /* drake.mp3 in Resources */,
 				D599CE7122D6B52E00620F96 /* ka-ching.mp3 in Resources */,
@@ -276,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FE5408E22DC1A9400C2F0F6 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
