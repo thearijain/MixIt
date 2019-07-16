@@ -240,6 +240,121 @@
             </objects>
             <point key="canvasLocation" x="849" y="998"/>
         </scene>
+        <!--Right Song Selection View Controller-->
+        <scene sceneID="S6y-xN-Gvp">
+            <objects>
+                <viewController id="NrJ-5a-KaH" customClass="RightSongSelectionViewController" customModule="DjApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KRM-0V-SMk">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="624"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mc6-jl-U1I">
+                                <rect key="frame" x="0.0" y="20" width="667" height="604"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTJ-Dj-b5b">
+                                        <rect key="frame" x="0.0" y="0.0" width="667" height="607.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Song Selector Background" translatesAutoresizingMaskIntoConstraints="NO" id="T8s-I9-M2g">
+                                                <rect key="frame" x="0.0" y="0.0" width="667" height="607.5"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Py-Is-6aH">
+                                                <rect key="frame" x="3" y="4" width="661" height="61"/>
+                                                <state key="normal" backgroundImage="Song Selector - Forbidden Voices"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATH-CK-GI1">
+                                                <rect key="frame" x="3" y="543" width="661" height="61"/>
+                                                <state key="normal" backgroundImage="Song Selector - Get Low"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4L-i2-GSR">
+                                                <rect key="frame" x="3" y="63" width="661" height="61"/>
+                                                <state key="normal" backgroundImage="Song Selector - Secrets"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jN6-Wj-KGl">
+                                                <rect key="frame" x="3" y="123" width="661" height="61"/>
+                                                <state key="normal" backgroundImage="Song Selector - Pursuit of Happiness"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBz-ST-Z2w">
+                                                <rect key="frame" x="3" y="183" width="661" height="61"/>
+                                                <state key="normal" backgroundImage="Song Selector - Purple Lamborghini"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nae-vx-v7a">
+                                                <rect key="frame" x="3" y="243" width="661" height="61"/>
+                                                <state key="normal" backgroundImage="Song Selector - Dj Got Us Fallin In Love Again"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JO9-Ub-j7m">
+                                                <rect key="frame" x="3" y="303" width="661" height="61"/>
+                                                <state key="normal" backgroundImage="Song Selector - Sexy Bitch"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdT-nH-mhN">
+                                                <rect key="frame" x="3" y="363" width="661" height="61"/>
+                                                <state key="normal" backgroundImage="Song Selector - Febreze"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdu-B4-5VM">
+                                                <rect key="frame" x="3" y="423" width="661" height="61"/>
+                                                <state key="normal" backgroundImage="Song Selector - Yeah"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3S8-WL-6xn">
+                                                <rect key="frame" x="3" y="483" width="661" height="61"/>
+                                                <state key="normal" backgroundImage="Song Selector - Magenta Riddim"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Wdu-B4-5VM" firstAttribute="top" secondItem="xdT-nH-mhN" secondAttribute="bottom" constant="-1" id="0gI-JP-BPK"/>
+                                            <constraint firstItem="nae-vx-v7a" firstAttribute="top" secondItem="bBz-ST-Z2w" secondAttribute="bottom" constant="-1" id="1eV-G3-vtu"/>
+                                            <constraint firstItem="ATH-CK-GI1" firstAttribute="top" secondItem="6Py-Is-6aH" secondAttribute="bottom" constant="478" id="2Y3-M0-4Yb"/>
+                                            <constraint firstItem="T8s-I9-M2g" firstAttribute="width" secondItem="MTJ-Dj-b5b" secondAttribute="width" id="2jh-av-rqV"/>
+                                            <constraint firstItem="T8s-I9-M2g" firstAttribute="height" secondItem="MTJ-Dj-b5b" secondAttribute="height" priority="250" id="5Af-jp-V6w"/>
+                                            <constraint firstItem="T8s-I9-M2g" firstAttribute="leading" secondItem="MTJ-Dj-b5b" secondAttribute="leading" id="Ejc-ce-hkE"/>
+                                            <constraint firstItem="jN6-Wj-KGl" firstAttribute="top" secondItem="t4L-i2-GSR" secondAttribute="bottom" constant="-1" id="GgY-fa-2Oa"/>
+                                            <constraint firstAttribute="bottom" secondItem="ATH-CK-GI1" secondAttribute="bottom" constant="3.5" id="PAa-0c-ecl"/>
+                                            <constraint firstItem="3S8-WL-6xn" firstAttribute="top" secondItem="Wdu-B4-5VM" secondAttribute="bottom" constant="-1" id="Vha-YB-dnT"/>
+                                            <constraint firstItem="T8s-I9-M2g" firstAttribute="top" secondItem="MTJ-Dj-b5b" secondAttribute="top" id="ZRa-DW-eQK"/>
+                                            <constraint firstAttribute="bottom" secondItem="T8s-I9-M2g" secondAttribute="bottom" id="bPp-wN-jB7"/>
+                                            <constraint firstItem="JO9-Ub-j7m" firstAttribute="top" secondItem="nae-vx-v7a" secondAttribute="bottom" constant="-1" id="r6m-yK-CLn"/>
+                                            <constraint firstItem="bBz-ST-Z2w" firstAttribute="top" secondItem="jN6-Wj-KGl" secondAttribute="bottom" constant="-1" id="sIx-jB-SEx"/>
+                                            <constraint firstItem="6Py-Is-6aH" firstAttribute="top" secondItem="MTJ-Dj-b5b" secondAttribute="top" constant="4" id="tmf-17-Mwn"/>
+                                            <constraint firstItem="xdT-nH-mhN" firstAttribute="top" secondItem="JO9-Ub-j7m" secondAttribute="bottom" constant="-1" id="u3B-iw-auQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="T8s-I9-M2g" secondAttribute="trailing" id="uOt-ph-PPr"/>
+                                            <constraint firstItem="t4L-i2-GSR" firstAttribute="top" secondItem="6Py-Is-6aH" secondAttribute="bottom" constant="-2" id="uoA-FK-Ts7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ATH-CK-GI1" firstAttribute="centerX" secondItem="Mc6-jl-U1I" secondAttribute="centerX" id="07K-Q5-Q1A"/>
+                                    <constraint firstAttribute="trailing" secondItem="MTJ-Dj-b5b" secondAttribute="trailing" id="3hz-86-SJ8"/>
+                                    <constraint firstItem="Wdu-B4-5VM" firstAttribute="centerX" secondItem="Mc6-jl-U1I" secondAttribute="centerX" id="63t-fn-ROg"/>
+                                    <constraint firstItem="MTJ-Dj-b5b" firstAttribute="width" secondItem="Mc6-jl-U1I" secondAttribute="width" id="6bd-qb-GK6"/>
+                                    <constraint firstItem="xdT-nH-mhN" firstAttribute="centerX" secondItem="Mc6-jl-U1I" secondAttribute="centerX" id="9h4-Xr-xiy"/>
+                                    <constraint firstItem="6Py-Is-6aH" firstAttribute="centerX" secondItem="Mc6-jl-U1I" secondAttribute="centerX" id="DQX-05-W6R"/>
+                                    <constraint firstItem="MTJ-Dj-b5b" firstAttribute="top" secondItem="Mc6-jl-U1I" secondAttribute="top" id="L4i-aV-Noq"/>
+                                    <constraint firstItem="bBz-ST-Z2w" firstAttribute="centerX" secondItem="Mc6-jl-U1I" secondAttribute="centerX" id="LGP-3u-jW4"/>
+                                    <constraint firstItem="MTJ-Dj-b5b" firstAttribute="leading" secondItem="Mc6-jl-U1I" secondAttribute="leading" id="YKP-hq-uIE"/>
+                                    <constraint firstItem="nae-vx-v7a" firstAttribute="centerX" secondItem="Mc6-jl-U1I" secondAttribute="centerX" id="YLn-5Y-HPH"/>
+                                    <constraint firstItem="JO9-Ub-j7m" firstAttribute="centerX" secondItem="Mc6-jl-U1I" secondAttribute="centerX" id="hb6-Pe-DCf"/>
+                                    <constraint firstAttribute="bottom" secondItem="MTJ-Dj-b5b" secondAttribute="bottom" id="hcS-Pm-NGY"/>
+                                    <constraint firstItem="MTJ-Dj-b5b" firstAttribute="height" secondItem="Mc6-jl-U1I" secondAttribute="height" priority="250" id="l97-xi-4Ui"/>
+                                    <constraint firstItem="jN6-Wj-KGl" firstAttribute="centerX" secondItem="Mc6-jl-U1I" secondAttribute="centerX" id="mQD-0P-Wtq"/>
+                                    <constraint firstItem="t4L-i2-GSR" firstAttribute="centerX" secondItem="Mc6-jl-U1I" secondAttribute="centerX" id="oG4-uW-mU2"/>
+                                    <constraint firstItem="3S8-WL-6xn" firstAttribute="centerX" secondItem="Mc6-jl-U1I" secondAttribute="centerX" id="ver-6b-pEs"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XS6-JE-vig" firstAttribute="trailing" secondItem="Mc6-jl-U1I" secondAttribute="trailing" id="Lja-NS-61A"/>
+                            <constraint firstItem="Mc6-jl-U1I" firstAttribute="leading" secondItem="XS6-JE-vig" secondAttribute="leading" id="khR-Dd-NxA"/>
+                            <constraint firstItem="XS6-JE-vig" firstAttribute="bottom" secondItem="Mc6-jl-U1I" secondAttribute="bottom" id="qSt-fi-tR7"/>
+                            <constraint firstItem="Mc6-jl-U1I" firstAttribute="top" secondItem="XS6-JE-vig" secondAttribute="top" id="rbh-NQ-ZRq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XS6-JE-vig"/>
+                    </view>
+                    <size key="freeformSize" width="667" height="624"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wik-D6-cOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="848.72563718140941" y="-1146.4000000000001"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -256,9 +371,6 @@
                                 <rect key="frame" x="607" y="80" width="57" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Loop Button"/>
-                                <connections>
-                                    <segue destination="gx7-rs-UGI" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="HhR-Sb-wcu"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvU-C7-B1r">
                                 <rect key="frame" x="4" y="81" width="57" height="74"/>
@@ -314,39 +426,42 @@
                                 <rect key="frame" x="569" y="81" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Add Song to Deck Button"/>
+                                <connections>
+                                    <segue destination="NrJ-5a-KaH" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="qgC-v8-1Op"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tne-pD-Pez">
-                                <rect key="frame" x="7" y="334" width="57" height="60"/>
+                                <rect key="frame" x="8" y="334" width="57" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="new-cue"/>
+                                <state key="normal" backgroundImage="new-cue"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjU-rL-qg2">
-                                <rect key="frame" x="604" y="334" width="57" height="60"/>
+                                <rect key="frame" x="605" y="334" width="57" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="new-cue"/>
+                                <state key="normal" backgroundImage="new-cue"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdP-qP-raR">
-                                <rect key="frame" x="71" y="334" width="57" height="34"/>
+                                <rect key="frame" x="72" y="334" width="57" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="new-play-pause"/>
+                                <state key="normal" backgroundImage="new-play-pause"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GE1-wO-JNR">
-                                <rect key="frame" x="540" y="334" width="57" height="34"/>
+                                <rect key="frame" x="541" y="334" width="57" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="new-play-pause"/>
+                                <state key="normal" backgroundImage="new-play-pause"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdg-Lr-YvG">
-                                <rect key="frame" x="145" y="341" width="85" height="27"/>
+                                <rect key="frame" x="146" y="342" width="85" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Sampler Button"/>
+                                <state key="normal" backgroundImage="Sampler Button"/>
                                 <connections>
                                     <segue destination="wYG-9b-4ps" kind="presentation" id="GEU-eq-SqB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAA-cS-eyJ">
-                                <rect key="frame" x="437" y="341" width="85" height="27"/>
+                                <rect key="frame" x="438" y="342" width="85" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Sampler Button"/>
+                                <state key="normal" backgroundImage="Sampler Button"/>
                                 <connections>
                                     <segue destination="giX-vr-RFW" kind="presentation" id="eBn-pg-V39"/>
                                 </connections>
@@ -391,27 +506,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.0809595202399" y="124"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="7xD-iS-nas">
-            <objects>
-                <viewController id="gx7-rs-UGI" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VCb-z0-iY4">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cdD-Us-233">
-                                <rect key="frame" x="374" y="81" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="8Nr-U0-Jb3"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YVa-rn-o3y" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="849" y="124"/>
         </scene>
         <!--Sampler Popup View Controller-->
         <scene sceneID="nxd-Py-aQj">
@@ -525,6 +619,17 @@
         <image name="Sampler Button" width="85" height="26.5"/>
         <image name="Sampler Overlay Background" width="213" height="213"/>
         <image name="Skrskr Sampler Button" width="85" height="85"/>
+        <image name="Song Selector - Dj Got Us Fallin In Love Again" width="661" height="61"/>
+        <image name="Song Selector - Febreze" width="661" height="61"/>
+        <image name="Song Selector - Forbidden Voices" width="661" height="61"/>
+        <image name="Song Selector - Get Low" width="661" height="61"/>
+        <image name="Song Selector - Magenta Riddim" width="661" height="61"/>
+        <image name="Song Selector - Purple Lamborghini" width="661" height="61"/>
+        <image name="Song Selector - Pursuit of Happiness" width="661" height="61"/>
+        <image name="Song Selector - Secrets" width="661" height="61"/>
+        <image name="Song Selector - Sexy Bitch" width="661" height="61"/>
+        <image name="Song Selector - Yeah" width="661" height="61"/>
+        <image name="Song Selector Background" width="667" height="607.5"/>
         <image name="Sync Button" width="115.5" height="26.5"/>
         <image name="Vinyl" width="203" height="215"/>
         <image name="Volume Slider" width="49" height="27"/>
