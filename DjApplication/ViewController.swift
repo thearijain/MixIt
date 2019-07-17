@@ -8,12 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+    
+    @IBOutlet var BPMLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        BPMLabel.text = BPMTrackRight
     }
     
     //Plays and pauses the trackRight song
@@ -31,6 +34,10 @@ class ViewController: UIViewController {
         trackRight.currentTime = 0
         trackRight.pause()
     }
-    
+
+    //Thinking outloud, make a function that changes the label, call this function inside the song selector buttons
+    func updateBPM() {
+        BPMLabel.text = "100"
+    }
 }
 

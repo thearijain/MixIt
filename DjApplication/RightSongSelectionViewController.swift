@@ -9,11 +9,17 @@
 import UIKit
 import AVFoundation
 
+//Global variables
 var trackRight = AVAudioPlayer()
 var audioSessionRight = AVAudioSession.sharedInstance()
 var songNameTrackRight = ""
+var BPMTrackRight = "0"
 
 class RightSongSelectionViewController: UIViewController {
+    
+ 
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +32,13 @@ class RightSongSelectionViewController: UIViewController {
         do {
             trackRight = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "Forbidden Voices", ofType: "mp3")!))
             trackRight.prepareToPlay()
+            
+            //TEST
+            songNameTrackRight = "Forbidden Voices"
+            BPMTrackRight = "128"
+            ViewController().updateBPM()
+            //END OF TEST
+            
             //Allows the song to play in the background
             do {
                 try audioSessionRight.setCategory(AVAudioSession.Category.playback)
@@ -42,7 +55,7 @@ class RightSongSelectionViewController: UIViewController {
     @IBAction func loadSecrets(_ sender: Any) {
         do {
             trackRight = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "Secrets", ofType: "mp3")!))
-            trackRight.prepareToPlay()   
+            trackRight.prepareToPlay()
             //Allows the song to play in the background
             do {
                 try audioSessionRight.setCategory(AVAudioSession.Category.playback)
