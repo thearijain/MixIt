@@ -11,7 +11,7 @@ import AVFoundation
 
 var trackRight = AVAudioPlayer()
 var audioSessionRight = AVAudioSession.sharedInstance()
-
+var songNameTrackRight = ""
 
 class RightSongSelectionViewController: UIViewController {
     
@@ -42,7 +42,7 @@ class RightSongSelectionViewController: UIViewController {
     @IBAction func loadSecrets(_ sender: Any) {
         do {
             trackRight = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "Secrets", ofType: "mp3")!))
-            trackRight.prepareToPlay()
+            trackRight.prepareToPlay()   
             //Allows the song to play in the background
             do {
                 try audioSessionRight.setCategory(AVAudioSession.Category.playback)
