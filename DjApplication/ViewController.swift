@@ -14,7 +14,22 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    //Plays and pauses the trackRight song
+    @IBAction func playPause(_ sender: Any) {
+        if trackRight.isPlaying {
+            trackRight.pause()
+        } else {
+            trackRight.play()
+        }
+    }
+    
+    //Restarts the song but does not play it
+    @IBAction func cutButton(_ sender: Any) {
+        trackRight.stop()
+        trackRight.currentTime = 0
+        trackRight.pause()
+    }
+    
 }
 

@@ -87,4 +87,5 @@ class LeftSamplerPopupViewController: UIViewController {
     @IBAction func closePopUp4(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
 }
