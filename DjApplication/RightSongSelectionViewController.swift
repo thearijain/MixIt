@@ -11,7 +11,7 @@ import AVFoundation
 
 var trackRight = AVAudioPlayer()
 var audioSessionRight = AVAudioSession.sharedInstance()
-
+var songNameTrackRight = ""
 
 class RightSongSelectionViewController: UIViewController {
     
