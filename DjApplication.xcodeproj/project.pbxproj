@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F0593ED22DF7BD800DD357A /* LeftLoopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0593EC22DF7BD800DD357A /* LeftLoopViewController.swift */; };
+		5F0593EF22DF7DBE00DD357A /* RightLoopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0593EE22DF7DBE00DD357A /* RightLoopViewController.swift */; };
 		5FA9936422DF691C00B1C45D /* LeftEQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA9936322DF691C00B1C45D /* LeftEQViewController.swift */; };
 		5FA9936622DF6BE200B1C45D /* RightEQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA9936522DF6BE200B1C45D /* RightEQViewController.swift */; };
 		D5657E1922CC3D710080A378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5657E1822CC3D710080A378 /* AppDelegate.swift */; };
@@ -56,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F0593EC22DF7BD800DD357A /* LeftLoopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftLoopViewController.swift; sourceTree = "<group>"; };
+		5F0593EE22DF7DBE00DD357A /* RightLoopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightLoopViewController.swift; sourceTree = "<group>"; };
 		5FA9936322DF691C00B1C45D /* LeftEQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftEQViewController.swift; sourceTree = "<group>"; };
 		5FA9936522DF6BE200B1C45D /* RightEQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightEQViewController.swift; sourceTree = "<group>"; };
 		D5657E1522CC3D710080A378 /* DjApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DjApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +155,8 @@
 				D5C787EF22DC039100D92904 /* RightHotCuesViewController.swift */,
 				5FA9936322DF691C00B1C45D /* LeftEQViewController.swift */,
 				5FA9936522DF6BE200B1C45D /* RightEQViewController.swift */,
+				5F0593EC22DF7BD800DD357A /* LeftLoopViewController.swift */,
+				5F0593EE22DF7DBE00DD357A /* RightLoopViewController.swift */,
 				D5657E1F22CC3D720080A378 /* Assets.xcassets */,
 				D5657E2122CC3D720080A378 /* LaunchScreen.storyboard */,
 				D5657E2422CC3D720080A378 /* Info.plist */,
@@ -358,7 +364,9 @@
 				D599CE8322D7E9A700620F96 /* LeftSamplerPopupViewController.swift in Sources */,
 				D5657E1B22CC3D710080A378 /* ViewController.swift in Sources */,
 				D5657E1922CC3D710080A378 /* AppDelegate.swift in Sources */,
+				5F0593ED22DF7BD800DD357A /* LeftLoopViewController.swift in Sources */,
 				D5C787F022DC039200D92904 /* RightHotCuesViewController.swift in Sources */,
+				5F0593EF22DF7DBE00DD357A /* RightLoopViewController.swift in Sources */,
 				5FA9936422DF691C00B1C45D /* LeftEQViewController.swift in Sources */,
 				D5845F2822DD47310035D1BC /* RightSongSelectionViewController.swift in Sources */,
 				D5C787F422DC0C7A00D92904 /* LeftHotCuesViewController.swift in Sources */,
