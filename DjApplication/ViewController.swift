@@ -37,7 +37,7 @@ class ViewController: UIViewController {
 
     //Thinking outloud, make a function that changes the label, call this function inside the song selector buttons
     func updateBPM() {
-        BPMLabel.text = "100"
+        BPMLabel.text = "100" //Crashes here because it finds nil
     }
 }
 

@@ -35,7 +35,7 @@ class RightSongSelectionViewController: UIViewController {
             
             //TEST
             songNameTrackRight = "Forbidden Voices"
-            BPMTrackRight = "128"
+            //BPMTrackRight = "128"
             ViewController().updateBPM()
             //END OF TEST
             
