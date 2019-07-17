@@ -381,11 +381,17 @@
                                 <rect key="frame" x="606" y="232" width="59" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="EQ Button"/>
+                                <connections>
+                                    <segue destination="8Z1-ak-Ydq" kind="presentation" id="EMF-8l-Ye2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTB-LQ-r3W">
                                 <rect key="frame" x="4" y="232" width="59" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="EQ Button"/>
+                                <connections>
+                                    <segue destination="c1r-fx-EeS" kind="presentation" id="93Y-R0-Rq2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGt-cb-QZU">
                                 <rect key="frame" x="607" y="156" width="57" height="74"/>
@@ -596,6 +602,134 @@
             </objects>
             <point key="canvasLocation" x="849" y="1873"/>
         </scene>
+        <!--LeftEQ View Controller-->
+        <scene sceneID="JeU-eu-f3n">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uz4-Om-hE1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="c1r-fx-EeS" customClass="LeftEQViewController" customModule="DjApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wrh-j9-6Hf">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EQ background new" translatesAutoresizingMaskIntoConstraints="NO" id="En4-Hi-IC5">
+                                <rect key="frame" x="19" y="63" width="302" height="248"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Fi-Tx-SKn">
+                                <rect key="frame" x="67" y="223" width="63" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="EQ Sliding button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiX-Oz-h4o">
+                                <rect key="frame" x="139" y="180" width="63" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="EQ Sliding button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Oe-Pt-ank">
+                                <rect key="frame" x="212" y="212" width="63" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="EQ Sliding button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWd-va-Tkt">
+                                <rect key="frame" x="0.0" y="0.0" width="291" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="closePopUp:" destination="c1r-fx-EeS" eventType="touchUpInside" id="Gt9-6I-cFA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktC-o5-6k4">
+                                <rect key="frame" x="51" y="309" width="240" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="closePopUp:" destination="c1r-fx-EeS" eventType="touchUpInside" id="am8-Sa-RLu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrL-dy-KGX">
+                                <rect key="frame" x="0.0" y="64" width="52" height="311"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="closePopUp:" destination="c1r-fx-EeS" eventType="touchUpInside" id="TAF-ov-AFq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WL3-YY-G7A">
+                                <rect key="frame" x="291" y="0.0" width="376" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="closePopUp:" destination="c1r-fx-EeS" eventType="touchUpInside" id="fCu-QU-BM6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.0042363556339999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qx9-cu-7y2"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-573" y="124"/>
+        </scene>
+        <!--RightEQ View Controller-->
+        <scene sceneID="mEq-G7-hiy">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xdc-zT-2L0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="8Z1-ak-Ydq" customClass="RightEQViewController" customModule="DjApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t8v-oP-L9f">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EQ background new" translatesAutoresizingMaskIntoConstraints="NO" id="tM6-mb-hcr">
+                                <rect key="frame" x="345" y="62" width="302" height="248"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNQ-GC-nmz">
+                                <rect key="frame" x="393" y="222" width="63" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="EQ Sliding button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpn-91-BTV">
+                                <rect key="frame" x="465" y="179" width="63" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="EQ Sliding button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulG-HN-JQU">
+                                <rect key="frame" x="538" y="211" width="63" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="EQ Sliding button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6k-Rx-CoS">
+                                <rect key="frame" x="0.0" y="0.0" width="376" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="closePopUp:" destination="8Z1-ak-Ydq" eventType="touchUpInside" id="2z7-VT-ftP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMo-Y6-VLH">
+                                <rect key="frame" x="376" y="0.0" width="291" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="closePopUp:" destination="8Z1-ak-Ydq" eventType="touchUpInside" id="edd-yO-9OH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0up-p2-9IP">
+                                <rect key="frame" x="376" y="309" width="240" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="closePopUp:" destination="8Z1-ak-Ydq" eventType="touchUpInside" id="GZ6-WY-r4S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ql4-hc-pRC">
+                                <rect key="frame" x="615" y="64" width="52" height="311"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="closePopUp:" destination="8Z1-ak-Ydq" eventType="touchUpInside" id="xTp-Ju-XPU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.0042363556339999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ekd-VC-UMz"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="849" y="124"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Add Song to Deck Button" width="29" height="29"/>
@@ -607,6 +741,8 @@
         <image name="Crossfader without Slider" width="152" height="29"/>
         <image name="Drake Sample" width="85" height="85"/>
         <image name="EQ Button" width="58.5" height="74"/>
+        <image name="EQ Sliding button" width="63" height="47"/>
+        <image name="EQ background new" width="208.5" height="213"/>
         <image name="Entire Top Portion" width="667" height="71"/>
         <image name="Hot Cues - Blue" width="85" height="85"/>
         <image name="Hot Cues - Green" width="85" height="85"/>
