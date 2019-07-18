@@ -33,11 +33,13 @@ class RightSongSelectionViewController: UIViewController {
             trackRight = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "Forbidden Voices", ofType: "mp3")!))
             trackRight.prepareToPlay()
             
-            //TEST
-            songNameTrackRight = "Forbidden Voices"
-            //BPMTrackRight = "128"
-            ViewController().updateBPM()
-            //END OF TEST
+//            //TEST
+//            songNameTrackRight = "Forbidden Voices"
+//            //BPMTrackRight = "128"
+//            ViewController().updateBPM()
+//            print(trackRight.url)
+            
+//            //END OF TEST
             
             //Allows the song to play in the background
             do {

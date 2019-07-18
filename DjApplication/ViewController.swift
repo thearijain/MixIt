@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class ViewController: UIViewController {
     
     @IBOutlet var BPMLabel: UILabel!
@@ -35,9 +34,9 @@ class ViewController: UIViewController {
         trackRight.pause()
     }
 
-    //Thinking outloud, make a function that changes the label, call this function inside the song selector buttons
-    func updateBPM() {
-        BPMLabel.text = "100" //Crashes here because it finds nil
-    }
+//    //Thinking outloud, make a function that changes the label, call this function inside the song selector buttons
+//    func updateBPM() {
+//        BPMLabel.text = BPMTrackRight //Crashes here because it finds nil
+//    }
 }
 
