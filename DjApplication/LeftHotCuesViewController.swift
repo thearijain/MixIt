@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class LeftHotCuesViewController: UIViewController {
 
     override func viewDidLoad() {
