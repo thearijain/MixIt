@@ -29,6 +29,7 @@
 		D5845F3D22DD4B440035D1BC /* Pursuit of Happiness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5845F3322DD4B440035D1BC /* Pursuit of Happiness.mp3 */; };
 		D5845F3E22DD4B440035D1BC /* Yeah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5845F3422DD4B440035D1BC /* Yeah.mp3 */; };
 		D5845F3F22DD4B440035D1BC /* Sexy Bitch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5845F3522DD4B440035D1BC /* Sexy Bitch.mp3 */; };
+		D5845F4322E1574B0035D1BC /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5845F4222E1574B0035D1BC /* NotificationNameExtension.swift */; };
 		D599CE6D22D6965A00620F96 /* SamplerPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D599CE6C22D6965A00620F96 /* SamplerPopupViewController.swift */; };
 		D599CE7122D6B52E00620F96 /* ka-ching.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D599CE7022D6B52E00620F96 /* ka-ching.mp3 */; };
 		D599CE7B22D6C52200620F96 /* airhorn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D599CE7A22D6C52200620F96 /* airhorn.mp3 */; };
@@ -86,6 +87,7 @@
 		D5845F3322DD4B440035D1BC /* Pursuit of Happiness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Pursuit of Happiness.mp3"; sourceTree = "<group>"; };
 		D5845F3422DD4B440035D1BC /* Yeah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Yeah.mp3; sourceTree = "<group>"; };
 		D5845F3522DD4B440035D1BC /* Sexy Bitch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sexy Bitch.mp3"; sourceTree = "<group>"; };
+		D5845F4222E1574B0035D1BC /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
 		D599CE6C22D6965A00620F96 /* SamplerPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplerPopupViewController.swift; sourceTree = "<group>"; };
 		D599CE7022D6B52E00620F96 /* ka-ching.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ka-ching.mp3"; sourceTree = "<group>"; };
 		D599CE7A22D6C52200620F96 /* airhorn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = airhorn.mp3; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				D599CE6C22D6965A00620F96 /* SamplerPopupViewController.swift */,
 				D5845F2722DD47310035D1BC /* RightSongSelectionViewController.swift */,
 				D599CE8222D7E9A700620F96 /* LeftSamplerPopupViewController.swift */,
+				D5845F4222E1574B0035D1BC /* NotificationNameExtension.swift */,
 				D5C787F322DC0C7A00D92904 /* LeftHotCuesViewController.swift */,
 				D5C787EF22DC039100D92904 /* RightHotCuesViewController.swift */,
 				5FA9936322DF691C00B1C45D /* LeftEQViewController.swift */,
@@ -367,6 +370,7 @@
 				D599CE6D22D6965A00620F96 /* SamplerPopupViewController.swift in Sources */,
 				5FA9936622DF6BE200B1C45D /* RightEQViewController.swift in Sources */,
 				D599CE8322D7E9A700620F96 /* LeftSamplerPopupViewController.swift in Sources */,
+				D5845F4322E1574B0035D1BC /* NotificationNameExtension.swift in Sources */,
 				D5657E1B22CC3D710080A378 /* ViewController.swift in Sources */,
 				D5657E1922CC3D710080A378 /* AppDelegate.swift in Sources */,
 				5F0593ED22DF7BD800DD357A /* LeftLoopViewController.swift in Sources */,

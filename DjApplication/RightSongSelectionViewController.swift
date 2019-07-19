@@ -13,12 +13,10 @@ import AVFoundation
 var trackRight = AVAudioPlayer()
 var audioSessionRight = AVAudioSession.sharedInstance()
 var songNameTrackRight = ""
-var BPMTrackRight = "0"
+var BPMTrackRight = ""
+
 
 class RightSongSelectionViewController: UIViewController {
-    
- 
-    
     
     
     override func viewDidLoad() {
@@ -26,21 +24,12 @@ class RightSongSelectionViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+
     //Loads the song Forbidden Voices x Martin Garrix
     @IBAction func loadForbiddenVoices(_ sender: Any) {
         do {
             trackRight = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "Forbidden Voices", ofType: "mp3")!))
             trackRight.prepareToPlay()
-            
-//            //TEST
-//            songNameTrackRight = "Forbidden Voices"
-//            //BPMTrackRight = "128"
-//            ViewController().updateBPM()
-//            print(trackRight.url)
-            
-//            //END OF TEST
-            
             //Allows the song to play in the background
             do {
                 try audioSessionRight.setCategory(AVAudioSession.Category.playback)
@@ -50,6 +39,11 @@ class RightSongSelectionViewController: UIViewController {
         catch {
             print("there has been an error")
         }
+        //Updates BPM and closes overlay
+        BPMTrackRight = "128"
+        songNameTrackRight = "Forbidden Voices x Martin Garrix"
+        NotificationCenter.default.post(name: Notification.Name.updateBPM, object: self)
+        NotificationCenter.default.post(name: Notification.Name.updateTrack, object: self)
         dismiss(animated: true, completion: nil)
     }
     
@@ -67,6 +61,11 @@ class RightSongSelectionViewController: UIViewController {
         catch {
             print("there has been an error")
         }
+        //Updates BPM and closes overlay
+        BPMTrackRight = "128"
+        songNameTrackRight = "Secrets x Tiesto"
+        NotificationCenter.default.post(name: Notification.Name.updateBPM, object: self)
+        NotificationCenter.default.post(name: Notification.Name.updateTrack, object: self)
         dismiss(animated: true, completion: nil)
     }
     
@@ -84,6 +83,11 @@ class RightSongSelectionViewController: UIViewController {
         catch {
             print("there has been an error")
         }
+        //Updates BPM and closes overlay
+        BPMTrackRight = "120"
+        songNameTrackRight = "Pursuit of Happiness x Steve Aoki"
+        NotificationCenter.default.post(name: Notification.Name.updateBPM, object: self)
+        NotificationCenter.default.post(name: Notification.Name.updateTrack, object: self)
         dismiss(animated: true, completion: nil)
     }
     
@@ -101,6 +105,11 @@ class RightSongSelectionViewController: UIViewController {
         catch {
             print("there has been an error")
         }
+        //Updates BPM and closes overlay
+        BPMTrackRight = "147"
+        songNameTrackRight = "Purple Lamborghini x Skrillex"
+        NotificationCenter.default.post(name: Notification.Name.updateBPM, object: self)
+        NotificationCenter.default.post(name: Notification.Name.updateTrack, object: self)
         dismiss(animated: true, completion: nil)
     }
     
@@ -118,6 +127,11 @@ class RightSongSelectionViewController: UIViewController {
         catch {
             print("there has been an error")
         }
+        //Updates BPM and closes overlay
+        BPMTrackRight = "121"
+        songNameTrackRight = "DJ Got Us Fallin In Love Again x Usher"
+        NotificationCenter.default.post(name: Notification.Name.updateBPM, object: self)
+        NotificationCenter.default.post(name: Notification.Name.updateTrack, object: self)
         dismiss(animated: true, completion: nil)
     }
     
@@ -135,6 +149,11 @@ class RightSongSelectionViewController: UIViewController {
         catch {
             print("there has been an error")
         }
+        //Updates BPM and closes overlay
+        BPMTrackRight = "130"
+        songNameTrackRight = "Sexy Bitch x David Guetta"
+        NotificationCenter.default.post(name: Notification.Name.updateBPM, object: self)
+        NotificationCenter.default.post(name: Notification.Name.updateTrack, object: self)
         dismiss(animated: true, completion: nil)
     }
     
@@ -152,6 +171,11 @@ class RightSongSelectionViewController: UIViewController {
         catch {
             print("there has been an error")
         }
+        //Updates BPM and closes overlay
+        BPMTrackRight = "150"
+        songNameTrackRight = "Febreze x Jack U"
+        NotificationCenter.default.post(name: Notification.Name.updateBPM, object: self)
+        NotificationCenter.default.post(name: Notification.Name.updateTrack, object: self)
         dismiss(animated: true, completion: nil)
     }
     
@@ -169,6 +193,11 @@ class RightSongSelectionViewController: UIViewController {
         catch {
             print("there has been an error")
         }
+        //Updates BPM and closes overlay
+        BPMTrackRight = "105"
+        songNameTrackRight = "Yeah x Usher"
+        NotificationCenter.default.post(name: Notification.Name.updateBPM, object: self)
+        NotificationCenter.default.post(name: Notification.Name.updateTrack, object: self)
         dismiss(animated: true, completion: nil)
     }
     
@@ -186,6 +215,11 @@ class RightSongSelectionViewController: UIViewController {
         catch {
             print("there has been an error")
         }
+        //Updates BPM and closes overlay
+        BPMTrackRight = "102"
+        songNameTrackRight = "Magenta Riddim x DJ Snake"
+        NotificationCenter.default.post(name: Notification.Name.updateBPM, object: self)
+        NotificationCenter.default.post(name: Notification.Name.updateTrack, object: self)
         dismiss(animated: true, completion: nil)
     }
     
@@ -203,7 +237,15 @@ class RightSongSelectionViewController: UIViewController {
         catch {
             print("there has been an error")
         }
+        //Updates BPM and closes overlay
+        BPMTrackRight = "101"
+        songNameTrackRight = "Get Low x Dillion Francis"
+        NotificationCenter.default.post(name: Notification.Name.updateBPM, object: self)
         dismiss(animated: true, completion: nil)
     }
     
+    //Top right X button
+    @IBAction func closePopUp(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
