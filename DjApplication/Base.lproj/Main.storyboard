@@ -582,6 +582,7 @@
                     </view>
                     <connections>
                         <outlet property="BPMLabel" destination="huX-Xv-a3m" id="onV-GW-z7n"/>
+                        <outlet property="ImageRightLabel" destination="cmc-er-aty" id="CMW-6h-xDC"/>
                         <outlet property="TrackRightLabel" destination="kGh-WD-vVE" id="hHv-qi-3xL"/>
                     </connections>
                 </viewController>

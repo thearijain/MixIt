@@ -14,7 +14,7 @@ var trackRight = AVAudioPlayer()
 var audioSessionRight = AVAudioSession.sharedInstance()
 var songNameTrackRight = ""
 var BPMTrackRight = ""
-var songImage:UIImageView? = nil
+var songImage = UIImageView()
 
 
 class RightSongSelectionViewController: UIViewController {
@@ -43,10 +43,6 @@ class RightSongSelectionViewController: UIViewController {
         //Updates BPM and closes overlay
         BPMTrackRight = "128"
         songNameTrackRight = "Forbidden Voices x Martin Garrix"
-        songImage?.image = UIImage(named: "forbiddenv")
-//        if background != nil {
-//            songImage?.image = background
-//        }
         NotificationCenter.default.post(name: Notification.Name.updateBPM, object: self)
         NotificationCenter.default.post(name: Notification.Name.updateTrack, object: self)
         NotificationCenter.default.post(name: Notification.Name.updateImage, object: self)
