@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet var ImageRightLabel: UIImageView!
     @IBOutlet var TrackRightSlider: DesignableSlider!{
         didSet {
+            //Makes the TrackRightSlider verticle
             TrackRightSlider.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi / 2))
         }
     }
@@ -63,7 +64,7 @@ class ViewController: UIViewController {
         trackRight.pause()
     }
     
-    
+    //Controls the volume of trackRight with the slider
     @IBAction func controlTrackRightVolume(_ sender: Any) {
         trackRight.volume = TrackRightSlider.value
     }
