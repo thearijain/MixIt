@@ -573,7 +573,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cmc-er-aty">
-                                <rect key="frame" x="459" y="162" width="85" height="82"/>
+                                <rect key="frame" x="447" y="148" width="109" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -582,7 +582,7 @@
                     </view>
                     <connections>
                         <outlet property="BPMLabel" destination="huX-Xv-a3m" id="onV-GW-z7n"/>
-                        <outlet property="ImageRightLabel" destination="cmc-er-aty" id="CMW-6h-xDC"/>
+                        <outlet property="ImageRightLabel" destination="cmc-er-aty" id="1bg-ow-cJR"/>
                         <outlet property="TrackRightLabel" destination="kGh-WD-vVE" id="hHv-qi-3xL"/>
                     </connections>
                 </viewController>

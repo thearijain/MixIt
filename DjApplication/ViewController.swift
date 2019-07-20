@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     @IBOutlet var BPMLabel: UILabel!
     @IBOutlet var TrackRightLabel: UILabel!
     @IBOutlet var ImageRightLabel: UIImageView!
@@ -23,7 +24,7 @@ class ViewController: UIViewController {
             let SongSelectorVC = notification.object as! RightSongSelectionViewController
             self.BPMLabel.text = BPMTrackRight
             self.TrackRightLabel.text = songNameTrackRight
-            self.ImageRightLabel = songImage
+            self.ImageRightLabel.image = UIImage(named: songImage)
         }
     }
     
