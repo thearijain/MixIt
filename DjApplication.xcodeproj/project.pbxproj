@@ -30,6 +30,7 @@
 		D5845F3E22DD4B440035D1BC /* Yeah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5845F3422DD4B440035D1BC /* Yeah.mp3 */; };
 		D5845F3F22DD4B440035D1BC /* Sexy Bitch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5845F3522DD4B440035D1BC /* Sexy Bitch.mp3 */; };
 		D5845F4322E1574B0035D1BC /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5845F4222E1574B0035D1BC /* NotificationNameExtension.swift */; };
+		D5845F4522E2B5590035D1BC /* emptyaudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5845F4422E2B5590035D1BC /* emptyaudio.mp3 */; };
 		D599CE6D22D6965A00620F96 /* SamplerPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D599CE6C22D6965A00620F96 /* SamplerPopupViewController.swift */; };
 		D599CE7122D6B52E00620F96 /* ka-ching.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D599CE7022D6B52E00620F96 /* ka-ching.mp3 */; };
 		D599CE7B22D6C52200620F96 /* airhorn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D599CE7A22D6C52200620F96 /* airhorn.mp3 */; };
@@ -88,6 +89,7 @@
 		D5845F3422DD4B440035D1BC /* Yeah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Yeah.mp3; sourceTree = "<group>"; };
 		D5845F3522DD4B440035D1BC /* Sexy Bitch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sexy Bitch.mp3"; sourceTree = "<group>"; };
 		D5845F4222E1574B0035D1BC /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
+		D5845F4422E2B5590035D1BC /* emptyaudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = emptyaudio.mp3; sourceTree = "<group>"; };
 		D599CE6C22D6965A00620F96 /* SamplerPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplerPopupViewController.swift; sourceTree = "<group>"; };
 		D599CE7022D6B52E00620F96 /* ka-ching.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ka-ching.mp3"; sourceTree = "<group>"; };
 		D599CE7A22D6C52200620F96 /* airhorn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = airhorn.mp3; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			children = (
 				D599CE7A22D6C52200620F96 /* airhorn.mp3 */,
 				D599CE7E22D7E39100620F96 /* Skrskr.mp3 */,
+				D5845F4422E2B5590035D1BC /* emptyaudio.mp3 */,
 				D599CE7C22D7E08500620F96 /* drake.mp3 */,
 				D599CE8622D9737200620F96 /* mlg-airhorn.mp3 */,
 				D599CE7022D6B52E00620F96 /* ka-ching.mp3 */,
@@ -327,6 +330,7 @@
 			files = (
 				D599CE7F22D7E39100620F96 /* Skrskr.mp3 in Resources */,
 				D5845F3F22DD4B440035D1BC /* Sexy Bitch.mp3 in Resources */,
+				D5845F4522E2B5590035D1BC /* emptyaudio.mp3 in Resources */,
 				D599CE7D22D7E08500620F96 /* drake.mp3 in Resources */,
 				D5845F3D22DD4B440035D1BC /* Pursuit of Happiness.mp3 in Resources */,
 				D5845F3822DD4B440035D1BC /* Febreze.mp3 in Resources */,
