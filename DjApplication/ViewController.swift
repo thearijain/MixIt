@@ -20,14 +20,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        //TEST
+        //Gives trackRight an empty audio file to start with
         do {
             trackRight = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "emptyaudio", ofType: "mp3")!))
             trackRight.prepareToPlay() }
         catch {
             print("error")
         }
-        //END TEST
         
         //Loads right track data onto mainVC, Notification Catcher
         NotificationCenter.default.addObserver(forName: .loadRightTrackData, object: nil, queue: OperationQueue.main) { (notification) in
