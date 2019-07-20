@@ -14,8 +14,15 @@ class ViewController: UIViewController {
     @IBOutlet var BPMLabel: UILabel!
     @IBOutlet var TrackRightLabel: UILabel!
     @IBOutlet var ImageRightLabel: UIImageView!
+    @IBOutlet var TrackRightSlider: DesignableSlider!{
+        didSet {
+            TrackRightSlider.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi / 2))
+        }
+    }
     
-
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -55,7 +62,11 @@ class ViewController: UIViewController {
         trackRight.currentTime = 0
         trackRight.pause()
     }
-
-
+    
+    
+    @IBAction func controlTrackRightVolume(_ sender: Any) {
+        trackRight.volume = TrackRightSlider.value
+    }
+    
 }
 
