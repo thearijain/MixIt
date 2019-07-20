@@ -10,7 +10,6 @@ import Foundation
 
 extension Notification.Name {
     
-    static let updateBPM = Notification.Name(rawValue: "updateBPM")
-    static let updateTrack = Notification.Name(rawValue: "updateTrack")
-    static let updateImage = Notification.Name(rawValue: "updateImage")
+    static let loadRightTrackData = Notification.Name(rawValue: "loadRightTrackData")
+
 }

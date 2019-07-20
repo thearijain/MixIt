@@ -19,8 +19,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        //Receives notification to update the BPM after a song is selected
-        NotificationCenter.default.addObserver(forName: .updateBPM, object: nil, queue: OperationQueue.main) { (notification) in
+        //Loads right track data onto mainVC
+        NotificationCenter.default.addObserver(forName: .loadRightTrackData, object: nil, queue: OperationQueue.main) { (notification) in
             let SongSelectorVC = notification.object as! RightSongSelectionViewController
             self.BPMLabel.text = BPMTrackRight
             self.TrackRightLabel.text = songNameTrackRight
