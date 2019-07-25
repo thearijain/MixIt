@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "EQ Sliding button.png",
+      "filename" : "EQ Sliding button rotated.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "EQ Sliding button@2x.png",
+      "filename" : "EQ Sliding button rotated@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "EQ Sliding button@3x.png",
+      "filename" : "EQ Sliding button rotated@3x.png",
       "scale" : "3x"
     }
   ],

@@ -49,10 +49,12 @@ class ViewController: UIViewController {
     //Plays and pauses the trackRight song
     @IBAction func playPause(_ sender: Any) {
  
-        if (trackRight.isPlaying ) {
+        if (trackRight.isPlaying) {
             trackRight.pause()
             } else {
+            trackRight.deviceCurrentTime = greenCurrentTime
             trackRight.play()
+            print("test")
         }
     }
     
