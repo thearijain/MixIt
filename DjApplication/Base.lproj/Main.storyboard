@@ -183,6 +183,9 @@
                                 <rect key="frame" x="413" y="106" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Hot Cues - Green"/>
+                                <connections>
+                                    <action selector="greenHotCue:" destination="U4y-2F-NYE" eventType="touchUpInside" id="C4e-Z9-ItB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOu-sP-Xbj">
                                 <rect key="frame" x="500" y="106" width="85" height="85"/>
@@ -697,24 +700,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EQ background new" translatesAutoresizingMaskIntoConstraints="NO" id="En4-Hi-IC5">
-                                <rect key="frame" x="19" y="63" width="302" height="248"/>
+                                <rect key="frame" x="64" y="85" width="208" height="213"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Fi-Tx-SKn">
-                                <rect key="frame" x="67" y="223" width="63" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="EQ Sliding button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiX-Oz-h4o">
-                                <rect key="frame" x="139" y="180" width="63" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="EQ Sliding button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Oe-Pt-ank">
-                                <rect key="frame" x="212" y="212" width="63" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="EQ Sliding button"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWd-va-Tkt">
                                 <rect key="frame" x="0.0" y="0.0" width="291" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -761,60 +749,57 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EQ background new" translatesAutoresizingMaskIntoConstraints="NO" id="tM6-mb-hcr">
-                                <rect key="frame" x="345" y="62" width="302" height="248"/>
+                                <rect key="frame" x="396" y="85" width="208" height="213"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNQ-GC-nmz">
-                                <rect key="frame" x="393" y="222" width="63" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="EQ Sliding button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpn-91-BTV">
-                                <rect key="frame" x="465" y="179" width="63" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="EQ Sliding button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulG-HN-JQU">
-                                <rect key="frame" x="538" y="211" width="63" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="EQ Sliding button"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6k-Rx-CoS">
-                                <rect key="frame" x="0.0" y="0.0" width="376" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="399" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="closePopUp:" destination="8Z1-ak-Ydq" eventType="touchUpInside" id="2z7-VT-ftP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMo-Y6-VLH">
-                                <rect key="frame" x="376" y="0.0" width="291" height="63"/>
+                                <rect key="frame" x="376" y="0.0" width="291" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="closePopUp:" destination="8Z1-ak-Ydq" eventType="touchUpInside" id="edd-yO-9OH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0up-p2-9IP">
-                                <rect key="frame" x="376" y="309" width="240" height="66"/>
+                                <rect key="frame" x="376" y="300" width="240" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="closePopUp:" destination="8Z1-ak-Ydq" eventType="touchUpInside" id="GZ6-WY-r4S"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ql4-hc-pRC">
-                                <rect key="frame" x="615" y="64" width="52" height="311"/>
+                                <rect key="frame" x="604" y="64" width="63" height="311"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="closePopUp:" destination="8Z1-ak-Ydq" eventType="touchUpInside" id="xTp-Ju-XPU"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="QnR-Ey-Gdg" customClass="DesignableSlider" customModule="DjApplication" customModuleProvider="target">
+                                <rect key="frame" x="478" y="190" width="169" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="maximumTrackTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbImage" value="EQ Sliding button rotated"/>
+                                </userDefinedRuntimeAttributes>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="0.0042363556339999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ekd-VC-UMz"/>
                     </view>
+                    <connections>
+                        <outlet property="HiSlider" destination="QnR-Ey-Gdg" id="RqN-SM-4Hn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdc-zT-2L0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="124"/>
+            <point key="canvasLocation" x="848.72563718140941" y="124"/>
         </scene>
         <!--Left Loop View Controller-->
         <scene sceneID="G4O-NR-spO">
@@ -1011,7 +996,7 @@
         <image name="Crossfader without Slider" width="152" height="29"/>
         <image name="Drake Sample" width="85" height="85"/>
         <image name="EQ Button" width="58.5" height="74"/>
-        <image name="EQ Sliding button" width="63" height="47"/>
+        <image name="EQ Sliding button rotated" width="47" height="63"/>
         <image name="EQ background new" width="208.5" height="213"/>
         <image name="Entire Top Portion" width="667" height="71"/>
         <image name="Hot Cues - Blue" width="85" height="85"/>

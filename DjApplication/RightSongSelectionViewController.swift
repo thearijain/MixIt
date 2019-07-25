@@ -16,6 +16,10 @@ var songNameTrackRight = ""
 var BPMTrackRight = ""
 var songImage = ""
 
+//TEST
+//var songNameForEQ = ""
+var sonTypeForEQ = ".mp3"
+
 
 class RightSongSelectionViewController: UIViewController {
     
@@ -48,8 +52,8 @@ class RightSongSelectionViewController: UIViewController {
         dismiss(animated: true, completion: nil)
         
 //TEST
-        //print(trackRight.url)
-        
+//        songNameForEQ = "Forbidden Voices"
+        greenButton = false;
 //END TEST
     }
     
