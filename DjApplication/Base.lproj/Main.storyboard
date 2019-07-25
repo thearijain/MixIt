@@ -542,12 +542,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uf4-BA-8ut">
                                 <rect key="frame" x="284" y="167" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Volume Slider"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Hb-fP-GeL">
-                                <rect key="frame" x="339" y="130" width="47" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Volume Slider"/>
+                                <state key="normal" backgroundImage="VolumeSlider"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bm6-Vr-j0P">
                                 <rect key="frame" x="604" y="334" width="57" height="60"/>
@@ -576,6 +571,18 @@
                                 <color key="textColor" red="0.98601549863815308" green="0.69297200441360474" blue="0.86943584680557251" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8Ni-pb-d0h" customClass="DesignableSlider" customModule="DjApplication" customModuleProvider="target">
+                                <rect key="frame" x="305" y="160" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.98601549860000004" green="0.69297200439999995" blue="0.86943584679999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.53784066438674927" green="0.53826528787612915" blue="0.53790640830993652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbImage" value="VolumeSliderRotated"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="controlTrackRightVolume:" destination="BYZ-38-t0r" eventType="valueChanged" id="gNt-RJ-Sqh"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -584,6 +591,7 @@
                         <outlet property="BPMLabel" destination="huX-Xv-a3m" id="onV-GW-z7n"/>
                         <outlet property="ImageRightLabel" destination="cmc-er-aty" id="1bg-ow-cJR"/>
                         <outlet property="TrackRightLabel" destination="kGh-WD-vVE" id="hHv-qi-3xL"/>
+                        <outlet property="TrackRightSlider" destination="8Ni-pb-d0h" id="9PO-ka-3py"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -1033,7 +1041,8 @@
         <image name="Song Selector Background" width="667" height="607.5"/>
         <image name="Sync Button" width="115.5" height="26.5"/>
         <image name="Vinyl" width="203" height="215"/>
-        <image name="Volume Slider" width="49" height="27"/>
+        <image name="VolumeSlider" width="49" height="27"/>
+        <image name="VolumeSliderRotated" width="9" height="31"/>
         <image name="new-cue" width="57" height="60"/>
         <image name="new-play-pause" width="57" height="34"/>
     </resources>

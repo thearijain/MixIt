@@ -7,35 +7,55 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
     @IBOutlet var BPMLabel: UILabel!
     @IBOutlet var TrackRightLabel: UILabel!
     @IBOutlet var ImageRightLabel: UIImageView!
+    @IBOutlet var TrackRightSlider: DesignableSlider!{
+        didSet {
+            //Makes the TrackRightSlider verticle
+            TrackRightSlider.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi / 2))
+        }
+    }
     
-
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        //Loads right track data onto mainVC
+        //Gives trackRight an empty audio file to start with
+        do {
+            trackRight = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "emptyaudio", ofType: "mp3")!))
+            trackRight.prepareToPlay() }
+        catch {
+            print("error")
+        }
+        
+        //Loads right track data onto mainVC, Notification Catcher
         NotificationCenter.default.addObserver(forName: .loadRightTrackData, object: nil, queue: OperationQueue.main) { (notification) in
             let SongSelectorVC = notification.object as! RightSongSelectionViewController
             self.BPMLabel.text = BPMTrackRight
             self.TrackRightLabel.text = songNameTrackRight
             self.ImageRightLabel.image = UIImage(named: songImage)
+            
         }
     }
     
     //Plays and pauses the trackRight song
     @IBAction func playPause(_ sender: Any) {
-        if trackRight.isPlaying {
+ 
+        if (trackRight.isPlaying ) {
             trackRight.pause()
-        } else {
+            } else {
             trackRight.play()
         }
     }
+    
     
     //Restarts the trackRight song but does not play it
     @IBAction func cueButton(_ sender: Any) {
@@ -43,7 +63,11 @@ class ViewController: UIViewController {
         trackRight.currentTime = 0
         trackRight.pause()
     }
-
-
+    
+    //Controls the volume of trackRight with the slider
+    @IBAction func controlTrackRightVolume(_ sender: Any) {
+        trackRight.volume = TrackRightSlider.value
+    }
+    
 }
 

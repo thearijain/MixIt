@@ -46,6 +46,11 @@ class RightSongSelectionViewController: UIViewController {
         songImage = "forbiddenv"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
+        
+//TEST
+        //print(trackRight.url)
+        
+//END TEST
     }
     
     //Loads the song Secrets x Tiesto
@@ -134,6 +139,10 @@ class RightSongSelectionViewController: UIViewController {
         songImage = "usher"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
+        //TEST
+        print(trackRight.url)
+        
+        //END TEST
     }
     
     //Loads Sexy Bitch x David Guetta

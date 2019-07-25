@@ -18,6 +18,7 @@
 		D5657E2322CC3D720080A378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5657E2122CC3D720080A378 /* LaunchScreen.storyboard */; };
 		D5657E2E22CC3D720080A378 /* DjApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5657E2D22CC3D720080A378 /* DjApplicationTests.swift */; };
 		D5657E3922CC3D720080A378 /* DjApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5657E3822CC3D720080A378 /* DjApplicationUITests.swift */; };
+		D567BB7722E398B100292778 /* DesignableSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D567BB7622E398B100292778 /* DesignableSlider.swift */; };
 		D5845F2822DD47310035D1BC /* RightSongSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5845F2722DD47310035D1BC /* RightSongSelectionViewController.swift */; };
 		D5845F3622DD4B440035D1BC /* Secrets.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5845F2C22DD4B410035D1BC /* Secrets.mp3 */; };
 		D5845F3722DD4B440035D1BC /* DJ Got Us.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5845F2D22DD4B410035D1BC /* DJ Got Us.mp3 */; };
@@ -30,6 +31,7 @@
 		D5845F3E22DD4B440035D1BC /* Yeah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5845F3422DD4B440035D1BC /* Yeah.mp3 */; };
 		D5845F3F22DD4B440035D1BC /* Sexy Bitch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5845F3522DD4B440035D1BC /* Sexy Bitch.mp3 */; };
 		D5845F4322E1574B0035D1BC /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5845F4222E1574B0035D1BC /* NotificationNameExtension.swift */; };
+		D5845F4522E2B5590035D1BC /* emptyaudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5845F4422E2B5590035D1BC /* emptyaudio.mp3 */; };
 		D599CE6D22D6965A00620F96 /* SamplerPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D599CE6C22D6965A00620F96 /* SamplerPopupViewController.swift */; };
 		D599CE7122D6B52E00620F96 /* ka-ching.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D599CE7022D6B52E00620F96 /* ka-ching.mp3 */; };
 		D599CE7B22D6C52200620F96 /* airhorn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D599CE7A22D6C52200620F96 /* airhorn.mp3 */; };
@@ -76,6 +78,7 @@
 		D5657E3422CC3D720080A378 /* DjApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DjApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5657E3822CC3D720080A378 /* DjApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DjApplicationUITests.swift; sourceTree = "<group>"; };
 		D5657E3A22CC3D720080A378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D567BB7622E398B100292778 /* DesignableSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableSlider.swift; sourceTree = "<group>"; };
 		D5845F2722DD47310035D1BC /* RightSongSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightSongSelectionViewController.swift; sourceTree = "<group>"; };
 		D5845F2C22DD4B410035D1BC /* Secrets.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Secrets.mp3; sourceTree = "<group>"; };
 		D5845F2D22DD4B410035D1BC /* DJ Got Us.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DJ Got Us.mp3"; sourceTree = "<group>"; };
@@ -88,6 +91,7 @@
 		D5845F3422DD4B440035D1BC /* Yeah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Yeah.mp3; sourceTree = "<group>"; };
 		D5845F3522DD4B440035D1BC /* Sexy Bitch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sexy Bitch.mp3"; sourceTree = "<group>"; };
 		D5845F4222E1574B0035D1BC /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
+		D5845F4422E2B5590035D1BC /* emptyaudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = emptyaudio.mp3; sourceTree = "<group>"; };
 		D599CE6C22D6965A00620F96 /* SamplerPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplerPopupViewController.swift; sourceTree = "<group>"; };
 		D599CE7022D6B52E00620F96 /* ka-ching.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ka-ching.mp3"; sourceTree = "<group>"; };
 		D599CE7A22D6C52200620F96 /* airhorn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = airhorn.mp3; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 				D5C787F322DC0C7A00D92904 /* LeftHotCuesViewController.swift */,
 				D5C787EF22DC039100D92904 /* RightHotCuesViewController.swift */,
 				5FA9936322DF691C00B1C45D /* LeftEQViewController.swift */,
+				D567BB7622E398B100292778 /* DesignableSlider.swift */,
 				5FA9936522DF6BE200B1C45D /* RightEQViewController.swift */,
 				5F0593EC22DF7BD800DD357A /* LeftLoopViewController.swift */,
 				5F0593EE22DF7DBE00DD357A /* RightLoopViewController.swift */,
@@ -209,6 +214,7 @@
 			children = (
 				D599CE7A22D6C52200620F96 /* airhorn.mp3 */,
 				D599CE7E22D7E39100620F96 /* Skrskr.mp3 */,
+				D5845F4422E2B5590035D1BC /* emptyaudio.mp3 */,
 				D599CE7C22D7E08500620F96 /* drake.mp3 */,
 				D599CE8622D9737200620F96 /* mlg-airhorn.mp3 */,
 				D599CE7022D6B52E00620F96 /* ka-ching.mp3 */,
@@ -327,6 +333,7 @@
 			files = (
 				D599CE7F22D7E39100620F96 /* Skrskr.mp3 in Resources */,
 				D5845F3F22DD4B440035D1BC /* Sexy Bitch.mp3 in Resources */,
+				D5845F4522E2B5590035D1BC /* emptyaudio.mp3 in Resources */,
 				D599CE7D22D7E08500620F96 /* drake.mp3 in Resources */,
 				D5845F3D22DD4B440035D1BC /* Pursuit of Happiness.mp3 in Resources */,
 				D5845F3822DD4B440035D1BC /* Febreze.mp3 in Resources */,
@@ -376,6 +383,7 @@
 				5F0593ED22DF7BD800DD357A /* LeftLoopViewController.swift in Sources */,
 				D5C787F022DC039200D92904 /* RightHotCuesViewController.swift in Sources */,
 				5F0593EF22DF7DBE00DD357A /* RightLoopViewController.swift in Sources */,
+				D567BB7722E398B100292778 /* DesignableSlider.swift in Sources */,
 				5FA9936422DF691C00B1C45D /* LeftEQViewController.swift in Sources */,
 				D5845F2822DD47310035D1BC /* RightSongSelectionViewController.swift in Sources */,
 				D5C787F422DC0C7A00D92904 /* LeftHotCuesViewController.swift in Sources */,
