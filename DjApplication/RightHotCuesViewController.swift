@@ -29,7 +29,7 @@ class RightHotCuesViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    
+    //loads green hot cue then plays song from recorded time stamp
     @IBAction func greenHotCue(_ sender: Any) {
         if cuePressed == false {
             if greenButton == false {
@@ -48,6 +48,7 @@ class RightHotCuesViewController: UIViewController {
         }
     }
     
+    //used to reset the hot cue if the cue button gets pressed
     func setGreenCurrentTime(time: Double, cue: Bool){
         greenCurrentTime = time
         greenButton = false
@@ -55,6 +56,7 @@ class RightHotCuesViewController: UIViewController {
     
     }
     
+    //resets cuePressed if a new song is loaded
     func setCuePressed(resetCue: Bool){
         cuePressed = resetCue
     }
