@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         if (trackRight.isPlaying) {
             trackRight.pause()
             } else {
-            trackRight.deviceCurrentTime = greenCurrentTime
+
             trackRight.play()
             print("test")
         }

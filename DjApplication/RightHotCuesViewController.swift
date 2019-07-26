@@ -38,9 +38,7 @@ class RightHotCuesViewController: UIViewController {
             greenButton = true
         }
         else {
-            trackRight.prepareToPlay()
-            trackRight.play(atTime: greenCurrentTime)
-            trackRight.play()
+            trackRight.pause()
             print(greenCurrentTime)
             print(greenButton)
         }
