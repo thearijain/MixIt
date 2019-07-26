@@ -12,6 +12,7 @@ import UIKit
 //Button pressed twice variables
 var greenCurrentTime = 0.0
 var greenButton = false
+var cuePressed = false
 
 
 class RightHotCuesViewController: UIViewController {
@@ -30,24 +31,31 @@ class RightHotCuesViewController: UIViewController {
     
     
     @IBAction func greenHotCue(_ sender: Any) {
-        if (greenButton == false && trackRight.isPlaying) {
-            greenCurrentTime = trackRight.currentTime
-            print(greenCurrentTime)
-            print(greenButton)
-            greenButton = true
-        }
-        else {
-            trackRight.stop()
-            trackRight.currentTime = greenCurrentTime
-            trackRight.play()
-            print(greenCurrentTime)
-            print(greenButton)
+        if cuePressed == false {
+            if greenButton == false {
+                greenCurrentTime = trackRight.currentTime
+                print(greenCurrentTime)
+                print(greenButton)
+                greenButton = true
+            }
+            else {
+                trackRight.stop()
+                trackRight.currentTime = greenCurrentTime
+                trackRight.play()
+                print(greenCurrentTime)
+                print(greenButton)
+            }
         }
     }
     
-    @IBAction func setGreenCurrentTime(time: Double){
+    func setGreenCurrentTime(time: Double, cue: Bool){
         greenCurrentTime = time
         greenButton = false
+        cuePressed = cue
     
+    }
+    
+    func setCuePressed(resetCue: Bool){
+        cuePressed = resetCue
     }
 }

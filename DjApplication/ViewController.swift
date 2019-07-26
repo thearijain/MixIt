@@ -42,7 +42,7 @@ class ViewController: UIViewController {
             self.BPMLabel.text = BPMTrackRight
             self.TrackRightLabel.text = songNameTrackRight
             self.ImageRightLabel.image = UIImage(named: songImage)
-            
+            RightHotCuesViewController().setCuePressed(resetCue: false)
         }
     }
     
@@ -64,7 +64,7 @@ class ViewController: UIViewController {
         trackRight.stop()
         trackRight.currentTime = 0
         trackRight.pause()
-        RightHotCuesViewController().setGreenCurrentTime(time: 0.0)
+        RightHotCuesViewController().setGreenCurrentTime(time: 0.0, cue: true)
     }
     
     //Controls the volume of trackRight with the slider
