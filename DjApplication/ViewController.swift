@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         if (trackRight.isPlaying) {
             trackRight.pause()
             } else {
-
+//            trackRight.deviceCurrentTime = greenCurrentTime
             trackRight.play()
             print("test")
         }
@@ -64,6 +64,7 @@ class ViewController: UIViewController {
         trackRight.stop()
         trackRight.currentTime = 0
         trackRight.pause()
+        RightHotCuesViewController().setGreenCurrentTime(time: 0.0)
     }
     
     //Controls the volume of trackRight with the slider

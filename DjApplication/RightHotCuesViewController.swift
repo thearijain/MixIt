@@ -14,7 +14,6 @@ var greenCurrentTime = 0.0
 var greenButton = false
 
 
-
 class RightHotCuesViewController: UIViewController {
     
 
@@ -31,17 +30,24 @@ class RightHotCuesViewController: UIViewController {
     
     
     @IBAction func greenHotCue(_ sender: Any) {
-        if (greenButton == false) {
+        if (greenButton == false && trackRight.isPlaying) {
             greenCurrentTime = trackRight.currentTime
             print(greenCurrentTime)
             print(greenButton)
             greenButton = true
         }
         else {
-            trackRight.pause()
+            trackRight.stop()
+            trackRight.currentTime = greenCurrentTime
+            trackRight.play()
             print(greenCurrentTime)
             print(greenButton)
         }
     }
     
+    @IBAction func setGreenCurrentTime(time: Double){
+        greenCurrentTime = time
+        greenButton = false
+    
+    }
 }
