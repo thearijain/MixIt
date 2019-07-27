@@ -56,6 +56,7 @@ class ViewController: UIViewController {
             ImageRightLabel.stopRotating()
             } else {
             trackRight.play()
+            RightHotCuesViewController().setCuePressed(resetCue: false)
             RightVinyl.startRotating()
             ImageRightLabel.startRotating()
             print("test")
