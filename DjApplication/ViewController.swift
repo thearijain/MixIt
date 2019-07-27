@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var BPMLabel: UILabel!
     @IBOutlet var TrackRightLabel: UILabel!
     @IBOutlet var ImageRightLabel: UIImageView!
+    @IBOutlet var RightVinyl: UIImageView!
     @IBOutlet var TrackRightSlider: DesignableSlider!{
         didSet {
             //Makes the TrackRightSlider verticle
@@ -51,9 +52,12 @@ class ViewController: UIViewController {
  
         if (trackRight.isPlaying) {
             trackRight.pause()
+            RightVinyl.stopRotating()
+            ImageRightLabel.stopRotating()
             } else {
-//            trackRight.deviceCurrentTime = greenCurrentTime
             trackRight.play()
+            RightVinyl.startRotating()
+            ImageRightLabel.startRotating()
             print("test")
         }
     }
