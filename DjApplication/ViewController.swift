@@ -65,6 +65,8 @@ class ViewController: UIViewController {
     
     //Restarts the trackRight song but does not play it
     @IBAction func cueButton(_ sender: Any) {
+        RightVinyl.stopRotating()
+        ImageRightLabel.stopRotating()
         trackRight.stop()
         trackRight.currentTime = 0
         trackRight.pause()
