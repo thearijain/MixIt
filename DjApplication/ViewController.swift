@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var BPMLabel: UILabel!
     @IBOutlet var TrackRightLabel: UILabel!
     @IBOutlet var ImageRightLabel: UIImageView!
+    @IBOutlet var RightVinyl: UIImageView!
     @IBOutlet var TrackRightSlider: DesignableSlider!{
         didSet {
             //Makes the TrackRightSlider verticle
@@ -42,7 +43,7 @@ class ViewController: UIViewController {
             self.BPMLabel.text = BPMTrackRight
             self.TrackRightLabel.text = songNameTrackRight
             self.ImageRightLabel.image = UIImage(named: songImage)
-            
+            RightHotCuesViewController().setCuePressed(resetCue: false)
         }
     }
     
@@ -51,9 +52,12 @@ class ViewController: UIViewController {
  
         if (trackRight.isPlaying) {
             trackRight.pause()
+            RightVinyl.stopRotating()
+            ImageRightLabel.stopRotating()
             } else {
-//            trackRight.deviceCurrentTime = greenCurrentTime
             trackRight.play()
+            RightVinyl.startRotating()
+            ImageRightLabel.startRotating()
             print("test")
         }
     }
@@ -61,10 +65,12 @@ class ViewController: UIViewController {
     
     //Restarts the trackRight song but does not play it
     @IBAction func cueButton(_ sender: Any) {
+        RightVinyl.stopRotating()
+        ImageRightLabel.stopRotating()
         trackRight.stop()
         trackRight.currentTime = 0
         trackRight.pause()
-        RightHotCuesViewController().setGreenCurrentTime(time: 0.0)
+        RightHotCuesViewController().setGreenCurrentTime(time: 0.0, cue: true)
     }
     
     //Controls the volume of trackRight with the slider
