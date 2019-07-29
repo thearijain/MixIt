@@ -12,6 +12,12 @@ import UIKit
 //Button pressed twice variables
 var greenCurrentTime = 0.0
 var greenButton = false
+var blueCurrentTime = 0.0
+var blueButton = false
+var pinkCurrentTime = 0.0
+var pinkButton = false
+var yellowCurrentTime = 0.0
+var yellowButton = false
 var cuePressed = false
 
 
@@ -48,7 +54,64 @@ class RightHotCuesViewController: UIViewController {
         }
     }
     
-    //used to reset the hot cue if the cue button gets pressed
+    //loads blue hot cue then plays song from recorded time stamp
+    @IBAction func blueHotCue(_ sender: Any) {
+        if cuePressed == false {
+            if blueButton == false {
+                blueCurrentTime = trackRight.currentTime
+                print(blueCurrentTime)
+                print(blueButton)
+                blueButton = true
+            }
+            else {
+                trackRight.stop()
+                trackRight.currentTime = blueCurrentTime
+                trackRight.play()
+                print(blueCurrentTime)
+                print(blueButton)
+            }
+        }
+    }
+    
+    //loads pink hot cue then plays song from recorded time stamp
+    @IBAction func pinkHotCue(_ sender: Any) {
+        if cuePressed == false {
+            if pinkButton == false {
+                pinkCurrentTime = trackRight.currentTime
+                print(pinkCurrentTime)
+                print(pinkButton)
+                pinkButton = true
+            }
+            else {
+                trackRight.stop()
+                trackRight.currentTime = pinkCurrentTime
+                trackRight.play()
+                print(pinkCurrentTime)
+                print(pinkButton)
+            }
+        }
+    }
+    
+    //loads yellow hot cue then plays song from recorded time stamp
+    @IBAction func yellowHotCue(_ sender: Any) {
+        if cuePressed == false {
+            if yellowButton == false {
+                yellowCurrentTime = trackRight.currentTime
+                print(yellowCurrentTime)
+                print(yellowButton)
+                yellowButton = true
+            }
+            else {
+                trackRight.stop()
+                trackRight.currentTime = yellowCurrentTime
+                trackRight.play()
+                print(yellowCurrentTime)
+                print(yellowButton)
+            }
+        }
+    }
+    
+    //used to reset the hot cue if the cue button gets pressed (not used atm)
     func setGreenCurrentTime(time: Double, cue: Bool){
         greenCurrentTime = time
         greenButton = false
@@ -56,7 +119,7 @@ class RightHotCuesViewController: UIViewController {
     
     }
     
-    //resets cuePressed if a new song is loaded
+    //resets cuePressed if a new song is loaded (not used atm)
     func setCuePressed(resetCue: Bool){
         cuePressed = resetCue
     }
