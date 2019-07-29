@@ -56,7 +56,6 @@ class ViewController: UIViewController {
             ImageRightLabel.stopRotating()
             } else {
             trackRight.play()
-//            RightHotCuesViewController().setCuePressed(resetCue: false)
             RightVinyl.startRotating()
             ImageRightLabel.startRotating()
             print("test")
@@ -71,7 +70,6 @@ class ViewController: UIViewController {
         trackRight.stop()
         trackRight.currentTime = 0
         trackRight.pause()
-//        RightHotCuesViewController().setGreenCurrentTime(time: 0.0, cue: true)
     }
     
     //Controls the volume of trackRight with the slider
