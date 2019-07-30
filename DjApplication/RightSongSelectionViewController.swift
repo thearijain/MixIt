@@ -50,7 +50,8 @@ class RightSongSelectionViewController: UIViewController {
         songImage = "forbiddenv"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
-        
+        //Resets the Hot Cues
+        resetHotCues()
     }
     
     //Loads the song Secrets x Tiesto
@@ -73,6 +74,8 @@ class RightSongSelectionViewController: UIViewController {
         songImage = "secrets"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
+        //Resets the Hot Cues
+        resetHotCues()
     }
     
     //Loads the song Pursuit of Happiness x Steve Aoki
@@ -95,6 +98,8 @@ class RightSongSelectionViewController: UIViewController {
         songImage = "pursuit"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
+        //Resets the Hot Cues
+        resetHotCues()
     }
     
     //Loads the song Purple Lamborghini x Skrillex
@@ -117,6 +122,8 @@ class RightSongSelectionViewController: UIViewController {
         songImage = "purplelambo"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
+        //Resets the Hot Cues
+        resetHotCues()
     }
     
     //Loads the song DJ Got Us Fallin In Love Again x Usher
@@ -139,10 +146,8 @@ class RightSongSelectionViewController: UIViewController {
         songImage = "usher"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
-        //TEST
-        print(trackRight.url)
-        
-        //END TEST
+        //Resets the Hot Cues
+        resetHotCues()
     }
     
     //Loads Sexy Bitch x David Guetta
@@ -165,6 +170,8 @@ class RightSongSelectionViewController: UIViewController {
         songImage = "sexyb"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
+        //Resets the Hot Cues
+        resetHotCues()
     }
     
     //Loads Febreze x Jack U
@@ -187,6 +194,8 @@ class RightSongSelectionViewController: UIViewController {
         songImage = "febreze"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
+        //Resets the Hot Cues
+        resetHotCues()
     }
     
     //Loads Yeah x Usher
@@ -209,6 +218,8 @@ class RightSongSelectionViewController: UIViewController {
         songImage = "yeah"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
+        //Resets the Hot Cues
+        resetHotCues()
     }
     
     //Loads Magenta Riddim x DJ Snake
@@ -231,6 +242,8 @@ class RightSongSelectionViewController: UIViewController {
         songImage = "magentariddim"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
+        //Resets the Hot Cues
+        resetHotCues()
     }
     
     //Loads Get Low x Dillion Francis
@@ -253,6 +266,8 @@ class RightSongSelectionViewController: UIViewController {
         songImage = "getlow"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
+        //Resets the Hot Cues
+        resetHotCues()
     }
     
     //Top right X button
