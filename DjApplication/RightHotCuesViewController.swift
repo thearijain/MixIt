@@ -23,7 +23,12 @@ var cuePressed = true
 
 class RightHotCuesViewController: UIViewController {
     
-
+    //TEST
+    @IBOutlet var greenButtonColor: UIButton!
+    
+    //END OF TEST
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,6 +50,7 @@ class RightHotCuesViewController: UIViewController {
         }
         else {
             //trackRight.stop()
+            greenButtonColor.backgroundColor = UIColor.green
             trackRight.currentTime = greenCurrentTime
             trackRight.play()
             print(greenCurrentTime)
@@ -68,7 +74,7 @@ class RightHotCuesViewController: UIViewController {
             print(blueButton)
         }
     }
-    
+
     //loads pink hot cue then plays song from recorded time stamp
     @IBAction func pinkHotCue(_ sender: Any) {
         if pinkButton == false {
@@ -85,7 +91,7 @@ class RightHotCuesViewController: UIViewController {
             print(pinkButton)
         }
     }
-    
+
     //loads yellow hot cue then plays song from recorded time stamp
     @IBAction func yellowHotCue(_ sender: Any) {
         if yellowButton == false {
@@ -103,7 +109,7 @@ class RightHotCuesViewController: UIViewController {
         }
 }
     
-    //used to reset the hot cue if the cue button gets pressed (not used atm)
+//    used to reset the hot cue if the cue button gets pressed (not used atm)
 //    func setGreenCurrentTime(time: Double, cue: Bool){
 //        greenCurrentTime = time
 //        greenButton = false

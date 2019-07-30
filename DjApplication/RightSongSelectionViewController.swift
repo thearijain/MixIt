@@ -51,10 +51,6 @@ class RightSongSelectionViewController: UIViewController {
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
         
-//TEST
-//        songNameForEQ = "Forbidden Voices"
-        greenButton = false;
-//END TEST
     }
     
     //Loads the song Secrets x Tiesto

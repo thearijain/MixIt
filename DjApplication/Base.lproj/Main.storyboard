@@ -184,7 +184,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Hot Cues - Green"/>
                                 <connections>
-                                    <action selector="greenHotCue:" destination="U4y-2F-NYE" eventType="touchUpInside" id="C4e-Z9-ItB"/>
+                                    <action selector="greenHotCue:" destination="U4y-2F-NYE" eventType="touchUpInside" id="U1J-k2-S6c"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOu-sP-Xbj">
@@ -192,7 +192,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Hot Cues - Blue"/>
                                 <connections>
-                                    <action selector="blueHotCue:" destination="U4y-2F-NYE" eventType="touchUpInside" id="YXU-9z-tjS"/>
+                                    <action selector="blueHotCue:" destination="U4y-2F-NYE" eventType="touchUpInside" id="UfI-dm-kTv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBe-Rp-1t8">
@@ -200,7 +200,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Hot Cues - Purple"/>
                                 <connections>
-                                    <action selector="pinkHotCue:" destination="U4y-2F-NYE" eventType="touchUpInside" id="JPK-e9-SXh"/>
+                                    <action selector="pinkHotCue:" destination="U4y-2F-NYE" eventType="touchUpInside" id="HsG-l9-HtA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayU-ro-1L6">
@@ -208,7 +208,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Hot Cues - Yellow"/>
                                 <connections>
-                                    <action selector="yellowHotCue:" destination="U4y-2F-NYE" eventType="touchUpInside" id="k77-s0-OO0"/>
+                                    <action selector="yellowHotCue:" destination="U4y-2F-NYE" eventType="touchUpInside" id="Jgy-6l-P8B"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duA-oH-m53">
@@ -248,7 +248,7 @@
                         <viewLayoutGuide key="safeArea" id="Gm6-oW-CwG"/>
                     </view>
                     <connections>
-                        <outlet property="greenButton" destination="gnO-g5-3t3" id="yj7-Kq-2zM"/>
+                        <outlet property="greenButtonColor" destination="gnO-g5-3t3" id="aju-GT-JM5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uVO-wt-UpE" userLabel="First Responder" sceneMemberID="firstResponder"/>
