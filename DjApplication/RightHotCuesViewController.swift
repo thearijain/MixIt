@@ -44,7 +44,7 @@ class RightHotCuesViewController: UIViewController {
             greenButton = true
         }
         else {
-            trackRight.stop()
+            //trackRight.stop()
             trackRight.currentTime = greenCurrentTime
             trackRight.play()
             print(greenCurrentTime)
