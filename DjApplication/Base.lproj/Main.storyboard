@@ -248,7 +248,10 @@
                         <viewLayoutGuide key="safeArea" id="Gm6-oW-CwG"/>
                     </view>
                     <connections>
+                        <outlet property="blueButtonColor" destination="vOu-sP-Xbj" id="3FO-4V-isI"/>
                         <outlet property="greenButtonColor" destination="gnO-g5-3t3" id="aju-GT-JM5"/>
+                        <outlet property="pinkButtonColor" destination="JBe-Rp-1t8" id="q77-nf-pH5"/>
+                        <outlet property="yellowButtonColor" destination="ayU-ro-1L6" id="zS4-4S-AdN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uVO-wt-UpE" userLabel="First Responder" sceneMemberID="firstResponder"/>

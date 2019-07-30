@@ -41,7 +41,6 @@ class ViewController: UIViewController {
             self.BPMLabel.text = BPMTrackRight
             self.TrackRightLabel.text = songNameTrackRight
             self.ImageRightLabel.image = UIImage(named: songImage)
-//            RightHotCuesViewController().setCuePressed(resetCue: false)
         }
     }
     

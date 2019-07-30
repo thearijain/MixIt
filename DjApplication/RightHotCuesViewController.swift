@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 //Button pressed twice variables
 var greenCurrentTime = 0.0
 var greenButton = false
@@ -20,19 +19,27 @@ var yellowCurrentTime = 0.0
 var yellowButton = false
 var cuePressed = true
 
+//Resets the HotCues so that the color change works
+func resetHotCues() {
+    greenButton = false
+    blueButton = false
+    pinkButton = false
+    yellowButton = false
+
+}
 
 class RightHotCuesViewController: UIViewController {
     
-    //TEST
+    //Used to change colors for hot cues when pressed
     @IBOutlet var greenButtonColor: UIButton!
-    
-    //END OF TEST
+    @IBOutlet var blueButtonColor: UIButton!
+    @IBOutlet var pinkButtonColor: UIButton!
+    @IBOutlet var yellowButtonColor: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+    
     }
     
     //Removes popup this is connected to four invisible buttons
@@ -44,17 +51,12 @@ class RightHotCuesViewController: UIViewController {
     @IBAction func greenHotCue(_ sender: Any) {
         if greenButton == false {
             greenCurrentTime = trackRight.currentTime
-            print(greenCurrentTime)
-            print(greenButton)
             greenButton = true
+            greenButtonColor.setBackgroundImage(UIImage(named: "HotCueGreenPressed"), for: .normal)
         }
         else {
-            //trackRight.stop()
-            greenButtonColor.setImage(UIImage(named:"HotCueGreenPressed")?.withRenderingMode(.alwaysTemplate), for: [])
             trackRight.currentTime = greenCurrentTime
             trackRight.play()
-            print(greenCurrentTime)
-            print(greenButton)
         }
     }
     
@@ -62,16 +64,12 @@ class RightHotCuesViewController: UIViewController {
     @IBAction func blueHotCue(_ sender: Any) {
         if blueButton == false {
             blueCurrentTime = trackRight.currentTime
-            print(blueCurrentTime)
-            print(blueButton)
             blueButton = true
+            blueButtonColor.setBackgroundImage(UIImage(named: "HotCueBluePressed"), for: .normal)
         }
         else {
-            trackRight.stop()
             trackRight.currentTime = blueCurrentTime
             trackRight.play()
-            print(blueCurrentTime)
-            print(blueButton)
         }
     }
 
@@ -79,16 +77,13 @@ class RightHotCuesViewController: UIViewController {
     @IBAction func pinkHotCue(_ sender: Any) {
         if pinkButton == false {
             pinkCurrentTime = trackRight.currentTime
-            print(pinkCurrentTime)
-            print(pinkButton)
             pinkButton = true
+            pinkButtonColor.setBackgroundImage(UIImage(named: "HotCuePinkPressed"), for: .normal)
         }
         else {
             trackRight.stop()
             trackRight.currentTime = pinkCurrentTime
             trackRight.play()
-            print(pinkCurrentTime)
-            print(pinkButton)
         }
     }
 
@@ -96,16 +91,13 @@ class RightHotCuesViewController: UIViewController {
     @IBAction func yellowHotCue(_ sender: Any) {
         if yellowButton == false {
             yellowCurrentTime = trackRight.currentTime
-            print(yellowCurrentTime)
-            print(yellowButton)
             yellowButton = true
+            yellowButtonColor.setBackgroundImage(UIImage(named: "HotCueYellowPressed"), for: .normal)
         }
         else {
             trackRight.stop()
             trackRight.currentTime = yellowCurrentTime
             trackRight.play()
-            print(yellowCurrentTime)
-            print(yellowButton)
         }
 }
     
