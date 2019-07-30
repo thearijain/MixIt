@@ -50,7 +50,7 @@ class RightHotCuesViewController: UIViewController {
         }
         else {
             //trackRight.stop()
-            greenButtonColor.backgroundColor = UIColor.green
+            greenButtonColor.setImage(UIImage(named:"HotCueGreenPressed")?.withRenderingMode(.alwaysTemplate), for: [])
             trackRight.currentTime = greenCurrentTime
             trackRight.play()
             print(greenCurrentTime)
