@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet var TrackRightLabel: UILabel!
     @IBOutlet var ImageRightLabel: UIImageView!
     @IBOutlet var RightVinyl: UIImageView!
+    @IBOutlet var RightWaveform: UIImageView!
     @IBOutlet var TrackRightSlider: DesignableSlider!{
         didSet {
             //Makes the TrackRightSlider verticle
@@ -41,6 +42,7 @@ class ViewController: UIViewController {
             self.BPMLabel.text = BPMTrackRight
             self.TrackRightLabel.text = songNameTrackRight
             self.ImageRightLabel.image = UIImage(named: songImage)
+            self.RightWaveform.image = UIImage(named: waveformImage)
         }
     }
     
