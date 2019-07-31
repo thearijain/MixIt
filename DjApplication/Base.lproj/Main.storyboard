@@ -600,6 +600,10 @@
                                     <action selector="controlTrackRightVolume:" destination="BYZ-38-t0r" eventType="valueChanged" id="gNt-RJ-Sqh"/>
                                 </connections>
                             </slider>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KD7-eS-IPy">
+                                <rect key="frame" x="49" y="47" width="569" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -608,6 +612,7 @@
                         <outlet property="BPMLabel" destination="huX-Xv-a3m" id="onV-GW-z7n"/>
                         <outlet property="ImageRightLabel" destination="cmc-er-aty" id="1bg-ow-cJR"/>
                         <outlet property="RightVinyl" destination="QCD-yH-INc" id="F8s-fg-lD0"/>
+                        <outlet property="RightWaveform" destination="KD7-eS-IPy" id="abo-6L-wWt"/>
                         <outlet property="TrackRightLabel" destination="kGh-WD-vVE" id="hHv-qi-3xL"/>
                         <outlet property="TrackRightSlider" destination="8Ni-pb-d0h" id="9PO-ka-3py"/>
                     </connections>
