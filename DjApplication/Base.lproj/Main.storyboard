@@ -604,6 +604,15 @@
                                 <rect key="frame" x="49" y="47" width="569" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vvr-wb-2Ue">
+                                <rect key="frame" x="47" y="40" width="573" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="maximumTrackTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="audioSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="gWB-80-7JX"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -615,6 +624,7 @@
                         <outlet property="RightWaveform" destination="KD7-eS-IPy" id="abo-6L-wWt"/>
                         <outlet property="TrackRightLabel" destination="kGh-WD-vVE" id="hHv-qi-3xL"/>
                         <outlet property="TrackRightSlider" destination="8Ni-pb-d0h" id="9PO-ka-3py"/>
+                        <outlet property="WaveformSlider" destination="vvr-wb-2Ue" id="UcT-CI-5Ss"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

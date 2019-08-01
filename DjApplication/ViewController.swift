@@ -11,6 +11,7 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
+    @IBOutlet var WaveformSlider: UISlider!
     @IBOutlet var BPMLabel: UILabel!
     @IBOutlet var TrackRightLabel: UILabel!
     @IBOutlet var ImageRightLabel: UIImageView!
@@ -26,8 +27,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
         //Gives trackRight an empty audio file to start with
         do {
             trackRight = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "emptyaudio", ofType: "mp3")!))
@@ -43,7 +42,14 @@ class ViewController: UIViewController {
             self.TrackRightLabel.text = songNameTrackRight
             self.ImageRightLabel.image = UIImage(named: songImage)
             self.RightWaveform.image = UIImage(named: waveformImage)
+            self.WaveformSlider.maximumValue = Float(trackRight.duration)
+            self.WaveformSlider.value = 0
+            var timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: "updateWaveformSlider", userInfo: nil, repeats: true)
+
+
         }
+        
+        //Sets attributes for the WaveformSlider
     }
     
     //Plays and pauses the trackRight song
@@ -74,6 +80,20 @@ class ViewController: UIViewController {
     //Controls the volume of trackRight with the slider
     @IBAction func controlTrackRightVolume(_ sender: Any) {
         trackRight.volume = TrackRightSlider.value
+    }
+    
+    @IBAction func audioSlider(_ sender: Any) {
+       
+        //trackRight.stop()
+        trackRight.currentTime = TimeInterval(WaveformSlider.value)
+        trackRight.prepareToPlay()
+        trackRight.play()
+    }
+    
+    //Makes sure that the waveform slider continuously moves
+    func updateWaveformSlider() {
+        WaveformSlider.value = Float(trackRight.currentTime)
+        NSLog("Hi")
     }
     
 }
