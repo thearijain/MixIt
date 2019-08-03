@@ -35,6 +35,9 @@ class ViewController: UIViewController {
             print("error")
         }
         
+        WaveformSlider.maximumValue = Float(trackRight.duration)
+        WaveformSlider.value = 0
+        
         //Loads right track data onto mainVC, Notification Catcher
         NotificationCenter.default.addObserver(forName: .loadRightTrackData, object: nil, queue: OperationQueue.main) { (notification) in
             let SongSelectorVC = notification.object as! RightSongSelectionViewController
@@ -44,12 +47,17 @@ class ViewController: UIViewController {
             self.RightWaveform.image = UIImage(named: waveformImage)
             self.WaveformSlider.maximumValue = Float(trackRight.duration)
             self.WaveformSlider.value = 0
-            var timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: "updateWaveformSlider", userInfo: nil, repeats: true)
-
-
         }
         
         //Sets attributes for the WaveformSlider
+        WaveformSlider.setThumbImage(UIImage(named: "WaveformSlider"), for: .normal)
+        
+        //This is supposed to make the slider move as the song is playing, breaks build when outside loop
+        while (trackRight.isPlaying) {
+
+           Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: Selector("updateWaveformSlider") , userInfo: nil, repeats: true)
+            
+        }
     }
     
     //Plays and pauses the trackRight song
@@ -65,6 +73,8 @@ class ViewController: UIViewController {
             ImageRightLabel.startRotating()
             print("test")
         }
+        
+
     }
     
     

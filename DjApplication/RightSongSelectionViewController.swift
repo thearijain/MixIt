@@ -17,10 +17,6 @@ var BPMTrackRight = ""
 var songImage = ""
 var waveformImage = ""
 
-//TEST
-//var songNameForEQ = ""
-var sonTypeForEQ = ".mp3"
-
 
 class RightSongSelectionViewController: UIViewController {
     
