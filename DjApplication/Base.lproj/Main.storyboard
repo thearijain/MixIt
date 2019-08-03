@@ -270,76 +270,76 @@
                                 <rect key="frame" x="0.0" y="20" width="667" height="604"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTJ-Dj-b5b">
-                                        <rect key="frame" x="0.0" y="0.0" width="667" height="607.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="667" height="519.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Song Selector Background" translatesAutoresizingMaskIntoConstraints="NO" id="T8s-I9-M2g">
-                                                <rect key="frame" x="0.0" y="0.0" width="667" height="607.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="667" height="519.5"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Py-Is-6aH">
-                                                <rect key="frame" x="3" y="4" width="661" height="61"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Py-Is-6aH">
+                                                <rect key="frame" x="3" y="3" width="661" height="61"/>
                                                 <state key="normal" backgroundImage="Song Selector - Forbidden Voices"/>
                                                 <connections>
                                                     <action selector="loadForbiddenVoices:" destination="NrJ-5a-KaH" eventType="touchUpInside" id="Wt8-GG-OSS"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATH-CK-GI1">
-                                                <rect key="frame" x="3" y="543" width="661" height="61"/>
+                                                <rect key="frame" x="325.5" y="498" width="16" height="18"/>
                                                 <state key="normal" backgroundImage="Song Selector - Get Low"/>
                                                 <connections>
                                                     <action selector="loadGetLow:" destination="NrJ-5a-KaH" eventType="touchUpInside" id="ktg-fb-s1b"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4L-i2-GSR">
-                                                <rect key="frame" x="3" y="63" width="661" height="61"/>
+                                                <rect key="frame" x="325.5" y="18" width="16" height="18"/>
                                                 <state key="normal" backgroundImage="Song Selector - Secrets"/>
                                                 <connections>
                                                     <action selector="loadSecrets:" destination="NrJ-5a-KaH" eventType="touchUpInside" id="57T-1Y-hYL"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jN6-Wj-KGl">
-                                                <rect key="frame" x="3" y="123" width="661" height="61"/>
+                                                <rect key="frame" x="325.5" y="35" width="16" height="18"/>
                                                 <state key="normal" backgroundImage="Song Selector - Pursuit of Happiness"/>
                                                 <connections>
                                                     <action selector="loadPursuitofHappiness:" destination="NrJ-5a-KaH" eventType="touchUpInside" id="pim-0N-vzw"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBz-ST-Z2w">
-                                                <rect key="frame" x="3" y="183" width="661" height="61"/>
+                                                <rect key="frame" x="325.5" y="52" width="16" height="18"/>
                                                 <state key="normal" backgroundImage="Song Selector - Purple Lamborghini"/>
                                                 <connections>
                                                     <action selector="loadPurpleLamborghini:" destination="NrJ-5a-KaH" eventType="touchUpInside" id="Qme-Pv-6Zw"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nae-vx-v7a">
-                                                <rect key="frame" x="3" y="243" width="661" height="61"/>
+                                                <rect key="frame" x="325.5" y="69" width="16" height="18"/>
                                                 <state key="normal" backgroundImage="Song Selector - Dj Got Us Fallin In Love Again"/>
                                                 <connections>
                                                     <action selector="loadDJGotUsFallinInLoveAgain:" destination="NrJ-5a-KaH" eventType="touchUpInside" id="Gt6-jD-AyA"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JO9-Ub-j7m">
-                                                <rect key="frame" x="3" y="303" width="661" height="61"/>
+                                                <rect key="frame" x="325.5" y="86" width="16" height="18"/>
                                                 <state key="normal" backgroundImage="Song Selector - Sexy Bitch"/>
                                                 <connections>
                                                     <action selector="loadSexyBitch:" destination="NrJ-5a-KaH" eventType="touchUpInside" id="KgG-tZ-RYA"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdT-nH-mhN">
-                                                <rect key="frame" x="3" y="363" width="661" height="61"/>
+                                                <rect key="frame" x="325.5" y="103" width="16" height="18"/>
                                                 <state key="normal" backgroundImage="Song Selector - Febreze"/>
                                                 <connections>
                                                     <action selector="loadFebreze:" destination="NrJ-5a-KaH" eventType="touchUpInside" id="HNu-JT-Oid"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdu-B4-5VM">
-                                                <rect key="frame" x="3" y="423" width="661" height="61"/>
+                                                <rect key="frame" x="325.5" y="120" width="16" height="18"/>
                                                 <state key="normal" backgroundImage="Song Selector - Yeah"/>
                                                 <connections>
                                                     <action selector="loadYeah:" destination="NrJ-5a-KaH" eventType="touchUpInside" id="S5J-z5-rPL"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3S8-WL-6xn">
-                                                <rect key="frame" x="3" y="483" width="661" height="61"/>
+                                                <rect key="frame" x="325.5" y="137" width="16" height="18"/>
                                                 <state key="normal" backgroundImage="Song Selector - Magenta Riddim"/>
                                                 <connections>
                                                     <action selector="loadMagentaRiddim:" destination="NrJ-5a-KaH" eventType="touchUpInside" id="oZW-Yn-96i"/>
@@ -426,7 +426,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhW-es-YXr">
-                                <rect key="frame" x="607" y="80" width="57" height="74"/>
+                                <rect key="frame" x="606" y="80" width="57" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Loop Button"/>
                                 <connections>
@@ -458,7 +458,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGt-cb-QZU">
-                                <rect key="frame" x="607" y="156" width="57" height="74"/>
+                                <rect key="frame" x="606" y="156" width="57" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Hot Cues Button"/>
                                 <connections>
@@ -487,7 +487,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzP-8v-CVG">
-                                <rect key="frame" x="68" y="94" width="203" height="215"/>
+                                <rect key="frame" x="68" y="94" width="202" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Vinyl"/>
                             </button>
@@ -505,7 +505,7 @@
                                 <state key="normal" backgroundImage="new-cue"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdP-qP-raR">
-                                <rect key="frame" x="72" y="334" width="57" height="34"/>
+                                <rect key="frame" x="71" y="334" width="57" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="new-play-pause"/>
                             </button>
@@ -519,7 +519,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdg-Lr-YvG">
-                                <rect key="frame" x="146" y="342" width="85" height="27"/>
+                                <rect key="frame" x="145" y="342" width="85" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Sampler Button"/>
                                 <connections>
@@ -527,7 +527,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAA-cS-eyJ">
-                                <rect key="frame" x="438" y="342" width="85" height="27"/>
+                                <rect key="frame" x="437" y="342" width="85" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Sampler Button"/>
                                 <connections>
@@ -535,7 +535,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Crossfader without Slider" translatesAutoresizingMaskIntoConstraints="NO" id="Je8-Mi-Qjk">
-                                <rect key="frame" x="257" y="337" width="153" height="29"/>
+                                <rect key="frame" x="256" y="337" width="153" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Qn-mi-e2H">
