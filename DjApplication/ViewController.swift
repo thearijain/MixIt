@@ -47,6 +47,7 @@ class ViewController: UIViewController {
             self.RightWaveform.image = UIImage(named: waveformImage)
             self.WaveformSlider.maximumValue = Float(trackRight.duration)
             self.WaveformSlider.value = 0
+            trackRight.volume = 0.5
         }
         
         //Sets attributes for the WaveformSlider

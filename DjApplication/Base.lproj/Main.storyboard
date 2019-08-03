@@ -588,7 +588,7 @@
                                 <color key="textColor" red="0.98601549863815308" green="0.69297200441360474" blue="0.86943584680557251" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8Ni-pb-d0h" customClass="DesignableSlider" customModule="DjApplication" customModuleProvider="target">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8Ni-pb-d0h" customClass="DesignableSlider" customModule="DjApplication" customModuleProvider="target">
                                 <rect key="frame" x="305" y="160" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="minimumTrackTintColor" red="0.98601549860000004" green="0.69297200439999995" blue="0.86943584679999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
