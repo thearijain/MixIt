@@ -30,9 +30,7 @@ class RightEQViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-/////////////////////////////////////////////////////
-        /////////////////////////////////////////////////////
-  
+
         
         // in viewDidLoad():
         equalizer = AVAudioUnitEQ(numberOfBands: 5)
@@ -60,16 +58,16 @@ class RightEQViewController: UIViewController {
         bands[4].filterType = .parametric
         
         do {
-
+            if let filepath = Bundle.main.path(forResource: "Forbidden Voices", ofType: "mp3") {
+                let filepathURL = NSURL.fileURL(withPath: filepath)
+                audioFile = try AVAudioFile(forReading: filepathURL)
                 audioEngine.prepare()
                 try audioEngine.start()
                 audioPlayerNode.scheduleFile(audioFile, at: nil, completionHandler: nil)
                 audioPlayerNode.play()
             }
-        catch _ {}
+        } catch _ {}
 
-
-/////////////////////////////////////////////////////
     }
     
     //Removes popup this is connected to four invisible buttons
