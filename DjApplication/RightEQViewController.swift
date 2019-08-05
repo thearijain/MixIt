@@ -30,9 +30,7 @@ class RightEQViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-/////////////////////////////////////////////////////
-        /////////////////////////////////////////////////////
-  
+
         
         // in viewDidLoad():
         equalizer = AVAudioUnitEQ(numberOfBands: 5)
@@ -70,8 +68,6 @@ class RightEQViewController: UIViewController {
             }
         } catch _ {}
 
-
-/////////////////////////////////////////////////////
     }
     
     //Removes popup this is connected to four invisible buttons
