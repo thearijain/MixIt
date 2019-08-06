@@ -16,13 +16,17 @@ var loopcount = 0
 class RightLoopViewController: UIViewController {
     
     var timer: Timer?
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
     }
+    
+    @IBOutlet var inButtonColor: UIButton!
+    @IBOutlet var outButtonColor: UIButton!
+    @IBOutlet var stopButtonColor: UIButton!
+    
     
     //Removes popup this is connected to four invisible buttons
     @IBAction func closePopUp(_ sender: Any) {
@@ -34,7 +38,7 @@ class RightLoopViewController: UIViewController {
         if inButtonPressed == false {
             InLoopTime = trackRight.currentTime
             inButtonPressed = true;
-            print("INLOOPTIME:" , InLoopTime)
+            inButtonColor.setBackgroundImage(UIImage(named: "IN-PRESSED"), for: .normal)
         }
     }
     
@@ -43,17 +47,18 @@ class RightLoopViewController: UIViewController {
         timer?.invalidate()
         inButtonPressed = false
         outButtonPressed = false
+        inButtonColor.setBackgroundImage(UIImage(named: "IN-NEW"), for: .normal)
+        outButtonColor.setBackgroundImage(UIImage(named: "OUT-NEW"), for: .normal)
     }
     
     //outButton
     @IBAction func outButton(_ sender: Any) {
     
         if outButtonPressed == false {
-                OutLoopTime = trackRight.currentTime
+            OutLoopTime = trackRight.currentTime
             outButtonPressed = true
-                print("OUTLOOPTIME:" , OutLoopTime)
-                print("you hit outButton")
-            }
+            outButtonColor.setBackgroundImage(UIImage(named: "OUT-PRESSED"), for: .normal)
+        }
         //Calls the repeatLoop function every .00001 sec
         timer = Timer.scheduledTimer(timeInterval: 0.00001, target: self, selector: #selector(RightLoopViewController.repeatLoop), userInfo: nil, repeats: true)
     }
@@ -65,13 +70,7 @@ class RightLoopViewController: UIViewController {
                 trackRight.currentTime = InLoopTime
                 trackRight.prepareToPlay()
                 trackRight.play()
-                
-                print("IT WORKED")
-                
         }
     }
-    
-    
-    
 }
 

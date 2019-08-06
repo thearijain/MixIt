@@ -969,11 +969,19 @@
                                 <rect key="frame" x="424" y="192" width="169" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="STOP-NEW"/>
+                                <connections>
+                                    <action selector="exitButton:" destination="l7R-zR-YNM" eventType="touchUpInside" id="lEs-z4-xfi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="YIO-Ku-C4c"/>
                     </view>
+                    <connections>
+                        <outlet property="inButtonColor" destination="6yb-cr-pm0" id="RBS-lK-KXK"/>
+                        <outlet property="outButtonColor" destination="DgR-qW-2P4" id="vAD-c0-pOM"/>
+                        <outlet property="stopButtonColor" destination="vrm-38-di8" id="1Yo-dT-NEd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="36C-Lu-cBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
