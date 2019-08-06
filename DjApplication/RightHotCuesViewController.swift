@@ -29,6 +29,8 @@ func resetHotCues() {
 
 class RightHotCuesViewController: UIViewController {
     
+    var hotCuesColortimer: Timer?
+    
     //Used to change colors for hot cues when pressed
     @IBOutlet var greenButtonColor: UIButton!
     @IBOutlet var blueButtonColor: UIButton!
@@ -39,6 +41,9 @@ class RightHotCuesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        //Makes sure the pressed down buttons retain color
+        hotCuesColortimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(RightHotCuesViewController.setBackrgoundImage), userInfo: nil, repeats: true)
+        
     }
     
     //Removes popup this is connected to four invisible buttons
@@ -74,7 +79,7 @@ class RightHotCuesViewController: UIViewController {
 
     //loads pink hot cue then plays song from recorded time stamp
     @IBAction func pinkHotCue(_ sender: Any) {
-        if pinkButton == false {
+    if pinkButton == false {
             pinkCurrentTime = trackRight.currentTime
             pinkButton = true
             pinkButtonColor.setBackgroundImage(UIImage(named: "HotCuePinkPressed"), for: .normal)
@@ -97,6 +102,21 @@ class RightHotCuesViewController: UIViewController {
             trackRight.stop()
             trackRight.currentTime = yellowCurrentTime
             trackRight.play()
+        }
+    }
+    
+    @objc func setBackrgoundImage() {
+        if (greenButton == true) {
+            greenButtonColor.setBackgroundImage(UIImage(named: "Hot Cues - Green"), for: .normal)
+        }
+        if (blueButton == true) {
+            blueButtonColor.setBackgroundImage(UIImage(named: "Hot Cues - Blue"), for: .normal)
+        }
+        if (pinkButton == true) {
+            pinkButtonColor.setBackgroundImage(UIImage(named: "Hot Cues - Purple"), for: .normal)
+        }
+        if (yellowButton == true) {
+            yellowButtonColor.setBackgroundImage(UIImage(named: "Hot Cues - Yellow"), for: .normal)
         }
     }
 }

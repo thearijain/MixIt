@@ -15,7 +15,7 @@ var outButtonPressed = false
 var loopcount = 0
 class RightLoopViewController: UIViewController {
     
-    var timer: Timer?
+    var loopTimer: Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +44,7 @@ class RightLoopViewController: UIViewController {
     
     //stopButton
     @IBAction func exitButton(_ sender: Any) {
-        timer?.invalidate()
+        loopTimer?.invalidate()
         inButtonPressed = false
         outButtonPressed = false
         inButtonColor.setBackgroundImage(UIImage(named: "IN-NEW"), for: .normal)
@@ -60,7 +60,7 @@ class RightLoopViewController: UIViewController {
             outButtonColor.setBackgroundImage(UIImage(named: "OUT-PRESSED"), for: .normal)
         }
         //Calls the repeatLoop function every .00001 sec
-        timer = Timer.scheduledTimer(timeInterval: 0.00001, target: self, selector: #selector(RightLoopViewController.repeatLoop), userInfo: nil, repeats: true)
+        loopTimer = Timer.scheduledTimer(timeInterval: 0.00001, target: self, selector: #selector(RightLoopViewController.repeatLoop), userInfo: nil, repeats: true)
     }
     
     //Repeats the loop set by the user

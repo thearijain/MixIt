@@ -54,11 +54,7 @@ class ViewController: UIViewController {
         WaveformSlider.setThumbImage(UIImage(named: "WaveformSlider"), for: .normal)
         
         //This is supposed to make the slider move as the song is playing, breaks build when outside loop
-        while (trackRight.isPlaying) {
-
-           Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: Selector("updateWaveformSlider") , userInfo: nil, repeats: true)
-            
-        }
+        Timer.scheduledTimer(timeInterval: 0.00001, target: self, selector: #selector(ViewController.updateWaveformSlider) , userInfo: nil, repeats: true)
     }
     
     //Plays and pauses the trackRight song
@@ -74,8 +70,6 @@ class ViewController: UIViewController {
             ImageRightLabel.startRotating()
             print("test")
         }
-        
-
     }
     
     
@@ -102,9 +96,8 @@ class ViewController: UIViewController {
     }
     
     //Makes sure that the waveform slider continuously moves
-    func updateWaveformSlider() {
+    @objc func updateWaveformSlider() {
         WaveformSlider.value = Float(trackRight.currentTime)
-        NSLog("Hi")
     }
     
 }
