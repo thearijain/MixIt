@@ -991,17 +991,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="OUT"/>
                                 <connections>
-                                    <action selector="outButton:" destination="l7R-zR-YNM" eventType="touchUpInside" id="7aC-bk-fmx"/>
+                                    <action selector="outButton:" destination="l7R-zR-YNM" eventType="touchDownRepeat" id="wyw-qe-7h6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cih-za-WQM">
                                 <rect key="frame" x="508" y="178" width="80" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="8"/>
-                                <connections>
-                                    <action selector="exitsWhileLoop:" destination="l7R-zR-YNM" eventType="touchUpInside" id="0fn-9e-tXM"/>
-                                    <action selector="outButton:" destination="l7R-zR-YNM" eventType="touchUpInside" id="Vkc-fz-eXE"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9V-h4-eHo">
                                 <rect key="frame" x="418" y="267" width="187" height="108"/>
@@ -1028,6 +1024,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="YIO-Ku-C4c"/>
                     </view>
+                    <connections>
+                        <outlet property="exitLoop" destination="GIY-fL-2gW" id="tnM-k3-9Qc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="36C-Lu-cBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

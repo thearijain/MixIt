@@ -15,6 +15,10 @@ var outButtonPressed = false
 var loopcount = 0
 class RightLoopViewController: UIViewController {
     
+    
+    @IBOutlet var exitLoop: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,64 +38,35 @@ class RightLoopViewController: UIViewController {
         }
     }
     
+    
+   
+    var timer: Timer?
+    
     @IBAction func outButton(_ sender: Any) {
+    
         if outButtonPressed == false {
-            OutLoopTime = trackRight.currentTime
-            print("OUTLOOPTIME:" , OutLoopTime)
-        }
+                OutLoopTime = trackRight.currentTime
+                print("OUTLOOPTIME:" , OutLoopTime)
+            }
         
         
-        //
-//        while ((outButtonPressed == false) && (trackRight.currentTime != InLoopTime)) {
-//            trackRight.stop()
-//            trackRight.currentTime = InLoopTime
-//            trackRight.prepareToPlay()
-//            trackRight.play()
-//            if (trackRight.currentTime == OutLoopTime) {
-//                trackRight.stop()
-//                trackRight.currentTime = InLoopTime
-//                trackRight.prepareToPlay()
-//                trackRight.play()
-//            }
-//        }
-        //
-//        repeat {
-//            trackRight.stop()
-//            trackRight.currentTime = InLoopTime
-//            trackRight.prepareToPlay()
-//            trackRight.play()
-////            if (trackRight.currentTime == OutLoopTime) {
-////            }
-//        } while (trackRight.currentTime == OutLoopTime)
+        timer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(RightLoopViewController.repeatLoop), userInfo: nil, repeats: true)
+    }
         
-        while (outButtonPressed == false) {
+        //while (outButtonOutlet. == true) {
          
-            loopcount = loopcount + 1
+            //loopcount = loopcount + 1
 
-            
-            if (trackRight.currentTime > OutLoopTime && loopcount >= 1) {
+    @objc func repeatLoop() {
+            if (trackRight.currentTime > OutLoopTime) {
                 trackRight.stop()
                 trackRight.currentTime = InLoopTime
                 trackRight.prepareToPlay()
                 trackRight.play()
                 
                 print("IT WORKED")
-            }
-            
-            if (outButtonPressed == true) {
-                break
-            }
-            
-            
         }
     }
-    
-    @IBAction func exitsWhileLoop(_ sender: Any) {
-        outButtonPressed = true
-    }
-    
-    
-    
     
     
     
