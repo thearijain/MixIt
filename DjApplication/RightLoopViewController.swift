@@ -15,9 +15,8 @@ var outButtonPressed = false
 var loopcount = 0
 class RightLoopViewController: UIViewController {
     
-    
-    @IBOutlet var exitLoop: UIButton!
-    
+    var timer: Timer?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,33 +29,36 @@ class RightLoopViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    //Attempt at doing the In and Out Loop Buttons
+    //inButton
     @IBAction func inButton(_ sender: Any) {
         if inButtonPressed == false {
             InLoopTime = trackRight.currentTime
             inButtonPressed = true;
+            print("INLOOPTIME:" , InLoopTime)
         }
     }
     
+    //stopButton
+    @IBAction func exitButton(_ sender: Any) {
+        timer?.invalidate()
+        inButtonPressed = false
+        outButtonPressed = false
+    }
     
-   
-    var timer: Timer?
-    
+    //outButton
     @IBAction func outButton(_ sender: Any) {
     
         if outButtonPressed == false {
                 OutLoopTime = trackRight.currentTime
+            outButtonPressed = true
                 print("OUTLOOPTIME:" , OutLoopTime)
+                print("you hit outButton")
             }
-        
-        
-        timer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(RightLoopViewController.repeatLoop), userInfo: nil, repeats: true)
+        //Calls the repeatLoop function every .00001 sec
+        timer = Timer.scheduledTimer(timeInterval: 0.00001, target: self, selector: #selector(RightLoopViewController.repeatLoop), userInfo: nil, repeats: true)
     }
-        
-        //while (outButtonOutlet. == true) {
-         
-            //loopcount = loopcount + 1
-
+    
+    //Repeats the loop set by the user
     @objc func repeatLoop() {
             if (trackRight.currentTime > OutLoopTime) {
                 trackRight.stop()
@@ -65,6 +67,7 @@ class RightLoopViewController: UIViewController {
                 trackRight.play()
                 
                 print("IT WORKED")
+                
         }
     }
     
