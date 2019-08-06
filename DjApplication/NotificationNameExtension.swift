@@ -11,5 +11,5 @@ import Foundation
 extension Notification.Name {
     
     static let loadRightTrackData = Notification.Name(rawValue: "loadRightTrackData")
-
+    static let startRightVinyl = Notification.Name(rawValue: "startRightVinyl")
 }

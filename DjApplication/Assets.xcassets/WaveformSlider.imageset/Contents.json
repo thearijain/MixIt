@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Waveform Slider.png",
+      "filename" : "wv_slider.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Waveform Slider@2x.png",
+      "filename" : "wv_slider@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Waveform Slider@3x.png",
+      "filename" : "wv_slider@3x.png",
       "scale" : "3x"
     }
   ],
