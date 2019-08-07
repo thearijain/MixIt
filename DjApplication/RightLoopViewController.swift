@@ -16,17 +16,23 @@ var loopcount = 0
 class RightLoopViewController: UIViewController {
     
     var loopTimer: Timer?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-    }
+    var loopColorTimer: Timer?
     
     @IBOutlet var inButtonColor: UIButton!
     @IBOutlet var outButtonColor: UIButton!
     @IBOutlet var stopButtonColor: UIButton!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //inButtonColor.setBackgroundImage(UIImage(named: "IN - NEW"), for: .normal)
+        
+        //Makes sure the in and out buttons retain color
+        
+//        loopColorTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(RightLoopViewController.setBackgroundImage) , userInfo: nil, repeats: true)
+    }
+    
+
     
     //Removes popup this is connected to four invisible buttons
     @IBAction func closePopUp(_ sender: Any) {
@@ -65,12 +71,22 @@ class RightLoopViewController: UIViewController {
     
     //Repeats the loop set by the user
     @objc func repeatLoop() {
-            if (trackRight.currentTime > OutLoopTime) {
+            if (trackRight.currentTime >= OutLoopTime) {
                 trackRight.stop()
                 trackRight.currentTime = InLoopTime
                 trackRight.prepareToPlay()
                 trackRight.play()
         }
     }
+    
+    //Makes sure the background image retains color
+//    @objc func setBackgroundImage() {
+//        if (outButtonPressed == false) {
+//            outButtonColor.setBackgroundImage(UIImage(named: "OUT-NEW"), for: .normal)
+//        }
+//        if (inButtonPressed == false) {
+//            inButtonColor.setBackgroundImage(UIImage(named: "IN-NEW"), for: .normal)
+//        }
+//    }
 }
 

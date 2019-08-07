@@ -32,17 +32,18 @@ class RightHotCuesViewController: UIViewController {
     var hotCuesColortimer: Timer?
     
     //Used to change colors for hot cues when pressed
-    @IBOutlet var greenButtonColor: UIButton!
     @IBOutlet var blueButtonColor: UIButton!
     @IBOutlet var pinkButtonColor: UIButton!
     @IBOutlet var yellowButtonColor: UIButton!
+    @IBOutlet var greenButtonColor: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        
         //Makes sure the pressed down buttons retain color
-        hotCuesColortimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(RightHotCuesViewController.setBackrgoundImage), userInfo: nil, repeats: true)
+        hotCuesColortimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(RightHotCuesViewController.setBackgroundImage), userInfo: nil, repeats: true)
         
     }
     
@@ -57,21 +58,20 @@ class RightHotCuesViewController: UIViewController {
             greenCurrentTime = trackRight.currentTime
             greenButton = true
             greenButtonColor.setBackgroundImage(UIImage(named: "HotCueGreenPressed"), for: .normal)
-        }
-        else {
+        } else {
             trackRight.currentTime = greenCurrentTime
             trackRight.play()
         }
     }
     
+
     //loads blue hot cue then plays song from recorded time stamp
     @IBAction func blueHotCue(_ sender: Any) {
         if blueButton == false {
             blueCurrentTime = trackRight.currentTime
             blueButton = true
             blueButtonColor.setBackgroundImage(UIImage(named: "HotCueBluePressed"), for: .normal)
-        }
-        else {
+        } else {
             trackRight.currentTime = blueCurrentTime
             trackRight.play()
         }
@@ -83,8 +83,7 @@ class RightHotCuesViewController: UIViewController {
             pinkCurrentTime = trackRight.currentTime
             pinkButton = true
             pinkButtonColor.setBackgroundImage(UIImage(named: "HotCuePinkPressed"), for: .normal)
-        }
-        else {
+        } else {
             trackRight.stop()
             trackRight.currentTime = pinkCurrentTime
             trackRight.play()
@@ -97,15 +96,15 @@ class RightHotCuesViewController: UIViewController {
             yellowCurrentTime = trackRight.currentTime
             yellowButton = true
             yellowButtonColor.setBackgroundImage(UIImage(named: "HotCueYellowPressed"), for: .normal)
-        }
-        else {
+        } else {
             trackRight.stop()
             trackRight.currentTime = yellowCurrentTime
             trackRight.play()
         }
     }
     
-    @objc func setBackrgoundImage() {
+    //Makes sure the background image retains color
+    @objc func setBackgroundImage() {
         if (greenButton == true) {
             greenButtonColor.setBackgroundImage(UIImage(named: "Hot Cues - Green"), for: .normal)
         }
