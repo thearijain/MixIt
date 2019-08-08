@@ -43,8 +43,8 @@ class RightHotCuesViewController: UIViewController {
     
         
         //Makes sure the pressed down buttons retain color
-        hotCuesColortimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(RightHotCuesViewController.setBackgroundImage), userInfo: nil, repeats: true)
-        
+        hotCuesColortimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(RightHotCuesViewController.setImage), userInfo: nil, repeats: true)
+//
     }
     
     //Removes popup this is connected to four invisible buttons
@@ -57,7 +57,7 @@ class RightHotCuesViewController: UIViewController {
         if greenButton == false {
             greenCurrentTime = trackRight.currentTime
             greenButton = true
-            greenButtonColor.setBackgroundImage(UIImage(named: "HotCueGreenPressed"), for: .normal)
+            greenButtonColor.setImage(UIImage(named: "HotCueGreenPressed"), for: .normal)
         } else {
             trackRight.currentTime = greenCurrentTime
             trackRight.play()
@@ -70,7 +70,7 @@ class RightHotCuesViewController: UIViewController {
         if blueButton == false {
             blueCurrentTime = trackRight.currentTime
             blueButton = true
-            blueButtonColor.setBackgroundImage(UIImage(named: "HotCueBluePressed"), for: .normal)
+            blueButtonColor.setImage(UIImage(named: "HotCueBluePressed"), for: .normal)
         } else {
             trackRight.currentTime = blueCurrentTime
             trackRight.play()
@@ -82,7 +82,7 @@ class RightHotCuesViewController: UIViewController {
     if pinkButton == false {
             pinkCurrentTime = trackRight.currentTime
             pinkButton = true
-            pinkButtonColor.setBackgroundImage(UIImage(named: "HotCuePinkPressed"), for: .normal)
+            pinkButtonColor.setImage(UIImage(named: "HotCuePinkPressed"), for: .normal)
         } else {
             trackRight.stop()
             trackRight.currentTime = pinkCurrentTime
@@ -95,7 +95,7 @@ class RightHotCuesViewController: UIViewController {
         if yellowButton == false {
             yellowCurrentTime = trackRight.currentTime
             yellowButton = true
-            yellowButtonColor.setBackgroundImage(UIImage(named: "HotCueYellowPressed"), for: .normal)
+            yellowButtonColor.setImage(UIImage(named: "HotCueYellowPressed"), for: .normal)
         } else {
             trackRight.stop()
             trackRight.currentTime = yellowCurrentTime
@@ -104,18 +104,18 @@ class RightHotCuesViewController: UIViewController {
     }
     
     //Makes sure the background image retains color
-    @objc func setBackgroundImage() {
+    @objc func setImage() {
         if (greenButton == true) {
-            greenButtonColor.setBackgroundImage(UIImage(named: "Hot Cues - Green"), for: .normal)
+            greenButtonColor.setImage(UIImage(named: "HotCueGreenPressed"), for: .normal)
         }
         if (blueButton == true) {
-            blueButtonColor.setBackgroundImage(UIImage(named: "Hot Cues - Blue"), for: .normal)
+            blueButtonColor.setImage(UIImage(named: "HotCueBluePressed"), for: .normal)
         }
         if (pinkButton == true) {
-            pinkButtonColor.setBackgroundImage(UIImage(named: "Hot Cues - Purple"), for: .normal)
+            pinkButtonColor.setImage(UIImage(named: "HotCuePinkPressed"), for: .normal)
         }
         if (yellowButton == true) {
-            yellowButtonColor.setBackgroundImage(UIImage(named: "Hot Cues - Yellow"), for: .normal)
+            yellowButtonColor.setImage(UIImage(named: "HotCueYellowPressed"), for: .normal)
         }
     }
 }

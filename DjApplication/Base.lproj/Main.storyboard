@@ -180,33 +180,33 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnO-g5-3t3">
-                                <rect key="frame" x="413" y="106" width="85" height="85"/>
+                                <rect key="frame" x="414" y="107" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Hot Cues - Green"/>
+                                <state key="normal" backgroundImage="Hot Cues - Green"/>
                                 <connections>
                                     <action selector="greenHotCue:" destination="U4y-2F-NYE" eventType="touchDown" id="Lvt-Ea-3na"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOu-sP-Xbj">
-                                <rect key="frame" x="500" y="106" width="85" height="85"/>
+                                <rect key="frame" x="501" y="107" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Hot Cues - Blue"/>
+                                <state key="normal" backgroundImage="Hot Cues - Blue"/>
                                 <connections>
                                     <action selector="blueHotCue:" destination="U4y-2F-NYE" eventType="touchDown" id="8KT-bA-B0F"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBe-Rp-1t8">
-                                <rect key="frame" x="413" y="193" width="85" height="85"/>
+                                <rect key="frame" x="414" y="194" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Hot Cues - Purple"/>
+                                <state key="normal" backgroundImage="Hot Cues - Purple"/>
                                 <connections>
                                     <action selector="pinkHotCue:" destination="U4y-2F-NYE" eventType="touchDown" id="Ltx-S1-mnm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayU-ro-1L6">
-                                <rect key="frame" x="500" y="193" width="85" height="85"/>
+                                <rect key="frame" x="501" y="194" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Hot Cues - Yellow"/>
+                                <state key="normal" backgroundImage="Hot Cues - Yellow"/>
                                 <connections>
                                     <action selector="yellowHotCue:" destination="U4y-2F-NYE" eventType="touchDown" id="lur-6Y-XeI"/>
                                 </connections>
