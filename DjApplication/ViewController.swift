@@ -59,12 +59,11 @@ class ViewController: UIViewController {
     
     //Plays and pauses the trackRight song
     @IBAction func playPause(_ sender: Any) {
- 
         if (trackRight.isPlaying) {
             trackRight.pause()
             RightVinyl.stopRotating()
             ImageRightLabel.stopRotating()
-            } else {
+        } else {
             trackRight.play()
             RightVinyl.startRotating()
             ImageRightLabel.startRotating()
@@ -88,11 +87,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func audioSlider(_ sender: Any) {
-       
-        //trackRight.stop()
-        trackRight.currentTime = TimeInterval(WaveformSlider.value)
-        trackRight.prepareToPlay()
-        trackRight.play()
+        if (trackRight.isPlaying == true) {
+            trackRight.currentTime = TimeInterval(WaveformSlider.value)
+            trackRight.prepareToPlay()
+            trackRight.play()
+        } else {
+            trackRight.currentTime = TimeInterval(WaveformSlider.value)
+            trackRight.prepareToPlay()
+        }
     }
     
     //Makes sure that the waveform slider continuously moves
