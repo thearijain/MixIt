@@ -14,7 +14,6 @@ var inButtonPressed = false
 var outButtonPressed = false
 
 class RightLoopViewController: UIViewController {
-    
    
     var loopTimer: Timer?
     var loopColorTimer: Timer?
@@ -29,8 +28,6 @@ class RightLoopViewController: UIViewController {
         //Makes sure the in and out buttons retain color
         loopColorTimer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(RightLoopViewController.setImage) , userInfo: nil, repeats: true)
     }
-    
-
     
     //Removes popup this is connected to four invisible buttons
     @IBAction func closePopUp(_ sender: Any) {

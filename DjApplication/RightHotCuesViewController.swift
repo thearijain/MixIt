@@ -44,7 +44,7 @@ class RightHotCuesViewController: UIViewController {
         
         //Makes sure the pressed down buttons retain color
         hotCuesColortimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(RightHotCuesViewController.setImage), userInfo: nil, repeats: true)
-//
+
     }
     
     //Removes popup this is connected to four invisible buttons
