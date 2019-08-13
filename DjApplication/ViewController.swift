@@ -12,10 +12,14 @@ import AVFoundation
 class ViewController: UIViewController {
     
     //Left Side Variables
-    @IBOutlet var TrackLeftVariable: UILabel!
-    
-    
-    
+    @IBOutlet var TrackLeftLabel: UILabel!
+    @IBOutlet var BPMLabelLeft: UILabel!
+    @IBOutlet var TrackLeftSlider: DesignableSlider!{
+        didSet {
+            //Makes the TrackLeftSlider verticle
+            TrackLeftSlider.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi / 2))
+        }
+    }
     
     
     //Right Side Variables
@@ -59,8 +63,11 @@ class ViewController: UIViewController {
         }
         
         //Loads left track data onto mainVC
-            NotificationCenter.default.addObserver(forName: .loadLeftTrackData, object: nil, queue: OperationQueue.main) { (notification) in
-            self.TrackLeftVariable.text = songNameTrackRight
+        NotificationCenter.default.addObserver(forName: .loadLeftTrackData, object: nil, queue: OperationQueue.main) { (notification) in
+            self.BPMLabelLeft.text = BPMTrackLeft
+            self.TrackLeftLabel.text = songNameTrackLeft
+            trackLeft.volume = 0.5
+
         }
         
         //Sets attributes for the WaveformSliderRight
@@ -80,10 +87,21 @@ class ViewController: UIViewController {
             trackRight.play()
             RightVinyl.startRotating()
             ImageRightLabel.startRotating()
-            print("test")
         }
     }
     
+    //Plays and pauses the trackLeft song
+    @IBAction func playPauseTrackLeft(_ sender: Any) {
+        if (trackLeft.isPlaying) {
+            trackLeft.pause()
+            //RightVinyl.stopRotating()
+            //ImageRightLabel.stopRotating()
+        } else {
+            trackLeft.play()
+            //RightVinyl.startRotating()
+            //ImageRightLabel.startRotating()
+        }
+    }
     
     //Restarts the trackRight song but does not play it
     @IBAction func cueButton(_ sender: Any) {
@@ -94,9 +112,24 @@ class ViewController: UIViewController {
         trackRight.pause()
     }
     
+    //Restarts the trackLeft song but does not play it
+    @IBAction func cueButtonLeft(_ sender: Any) {
+        //RightVinyl.stopRotating()
+        //ImageRightLabel.stopRotating()
+        trackLeft.stop()
+        trackLeft.currentTime = 0
+        trackLeft.pause()
+    }
+    
+    
     //Controls the volume of trackRight with the slider
     @IBAction func controlTrackRightVolume(_ sender: Any) {
         trackRight.volume = TrackRightSlider.value
+    }
+    
+    //Controls the volume of trackLeft with the slider
+    @IBAction func controlTrackLeftVolume(_ sender: Any) {
+        trackLeft.volume = TrackLeftSlider.value
     }
     
     @IBAction func audioSlider(_ sender: Any) {

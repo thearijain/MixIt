@@ -40,10 +40,8 @@ class RightHotCuesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         //Makes sure the pressed down buttons retain color
         hotCuesColortimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(RightHotCuesViewController.setImage), userInfo: nil, repeats: true)
-
     }
     
     //Removes popup this is connected to four invisible buttons
@@ -63,7 +61,6 @@ class RightHotCuesViewController: UIViewController {
         }
     }
     
-
     //loads blue hot cue then plays song from recorded time stamp
     @IBAction func blueHotCue(_ sender: Any) {
         if blueButton == false {
@@ -83,7 +80,6 @@ class RightHotCuesViewController: UIViewController {
             pinkButton = true
             pinkButtonColor.setImage(UIImage(named: "HotCuePinkPressed"), for: .normal)
         } else {
-            trackRight.stop()
             trackRight.currentTime = pinkCurrentTime
             trackRight.play()
         }
@@ -96,7 +92,6 @@ class RightHotCuesViewController: UIViewController {
             yellowButton = true
             yellowButtonColor.setImage(UIImage(named: "HotCueYellowPressed"), for: .normal)
         } else {
-            trackRight.stop()
             trackRight.currentTime = yellowCurrentTime
             trackRight.play()
         }
