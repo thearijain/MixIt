@@ -14,8 +14,8 @@ var trackRight = AVAudioPlayer()
 var audioSessionRight = AVAudioSession.sharedInstance()
 var songNameTrackRight = ""
 var BPMTrackRight = ""
-var songImage = ""
-var waveformImage = ""
+var songImageRight = ""
+var waveformImageRight = ""
 
 
 class RightSongSelectionViewController: UIViewController {
@@ -24,7 +24,6 @@ class RightSongSelectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     //Loads the song Forbidden Voices x Martin Garrix
@@ -44,8 +43,8 @@ class RightSongSelectionViewController: UIViewController {
         //Loads right track data onto mainVC
         BPMTrackRight = "128"
         songNameTrackRight = "Forbidden Voices x Martin Garrix"
-        songImage = "forbiddenv"
-        waveformImage = "ForbiddenVWaveform"
+        songImageRight = "forbiddenv"
+        waveformImageRight = "ForbiddenVWaveform"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
         //Resets the Hot Cues
@@ -69,8 +68,8 @@ class RightSongSelectionViewController: UIViewController {
         //Loads right track data onto mainVC
         BPMTrackRight = "128"
         songNameTrackRight = "Secrets x Tiesto"
-        songImage = "secrets"
-        waveformImage = "SecretsWaveform"
+        songImageRight = "secrets"
+        waveformImageRight = "SecretsWaveform"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
         //Resets the Hot Cues
@@ -94,8 +93,8 @@ class RightSongSelectionViewController: UIViewController {
         //Loads right track data onto mainVC
         BPMTrackRight = "120"
         songNameTrackRight = "Pursuit of Happiness x Steve Aoki"
-        songImage = "pursuit"
-        waveformImage = "PursuitWaveform"
+        songImageRight = "pursuit"
+        waveformImageRight = "PursuitWaveform"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
         //Resets the Hot Cues
@@ -119,8 +118,8 @@ class RightSongSelectionViewController: UIViewController {
         //Loads right track data onto mainVC
         BPMTrackRight = "147"
         songNameTrackRight = "Purple Lamborghini x Skrillex"
-        songImage = "purplelambo"
-        waveformImage = "PurpleLamboWaveform"
+        songImageRight = "purplelambo"
+        waveformImageRight = "PurpleLamboWaveform"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
         //Resets the Hot Cues
@@ -144,8 +143,8 @@ class RightSongSelectionViewController: UIViewController {
         //Loads right track data onto mainVC
         BPMTrackRight = "121"
         songNameTrackRight = "DJ Got Us Fallin In Love Again x Usher"
-        songImage = "usher"
-        waveformImage = "DjGotUsWaveform"
+        songImageRight = "usher"
+        waveformImageRight = "DjGotUsWaveform"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
         //Resets the Hot Cues
@@ -169,8 +168,8 @@ class RightSongSelectionViewController: UIViewController {
         //Loads right track data onto mainVC
         BPMTrackRight = "130"
         songNameTrackRight = "Sexy Bitch x David Guetta"
-        songImage = "sexyb"
-        waveformImage = "SexyBitchWaveform"
+        songImageRight = "sexyb"
+        waveformImageRight = "SexyBitchWaveform"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
         //Resets the Hot Cues
@@ -194,8 +193,8 @@ class RightSongSelectionViewController: UIViewController {
         //Loads right track data onto mainVC
         BPMTrackRight = "150"
         songNameTrackRight = "Febreze x Jack U"
-        songImage = "febreze"
-        waveformImage = "FebrezeWaveform"
+        songImageRight = "febreze"
+        waveformImageRight = "FebrezeWaveform"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
         //Resets the Hot Cues
@@ -219,8 +218,8 @@ class RightSongSelectionViewController: UIViewController {
         //Loads right track data onto mainVC
         BPMTrackRight = "105"
         songNameTrackRight = "Yeah x Usher"
-        songImage = "yeah"
-        waveformImage = "YeahWaveform"
+        songImageRight = "yeah"
+        waveformImageRight = "YeahWaveform"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
         //Resets the Hot Cues
@@ -244,8 +243,8 @@ class RightSongSelectionViewController: UIViewController {
         //Loads right track data onto mainVC
         BPMTrackRight = "102"
         songNameTrackRight = "Magenta Riddim x DJ Snake"
-        songImage = "magentariddim"
-        waveformImage = "MagentaRiddimWaveform"
+        songImageRight = "magentariddim"
+        waveformImageRight = "MagentaRiddimWaveform"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
         //Resets the Hot Cues
@@ -269,8 +268,8 @@ class RightSongSelectionViewController: UIViewController {
         //Loads right track data onto mainVC
         BPMTrackRight = "101"
         songNameTrackRight = "Get Low x Dillion Francis"
-        songImage = "getlow"
-        waveformImage = "GetLowWaveform"
+        songImageRight = "getlow"
+        waveformImageRight = "GetLowWaveform"
         NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
         //Resets the Hot Cues
