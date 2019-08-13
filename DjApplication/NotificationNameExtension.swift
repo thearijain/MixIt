@@ -13,4 +13,5 @@ extension Notification.Name {
     static let loadRightTrackData = Notification.Name(rawValue: "loadRightTrackData")
     static let startRightVinyl = Notification.Name(rawValue: "startRightVinyl")
     static let loadLeftTrackData = Notification.Name(rawValue: "loadLeftTrackData")
+    static let startRotating = Notification.Name(rawValue: "startRotating")
 }

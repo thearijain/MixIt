@@ -62,6 +62,12 @@ class ViewController: UIViewController {
             trackRight.volume = 0.5
         }
         
+        //starts vinyl spinning
+        NotificationCenter.default.addObserver(forName: .startRotating, object: nil, queue: OperationQueue.main) { (notification) in
+            self.RightVinyl.startRotating()
+            self.ImageRightLabel.startRotating()
+        }
+        
         //Loads left track data onto mainVC
         NotificationCenter.default.addObserver(forName: .loadLeftTrackData, object: nil, queue: OperationQueue.main) { (notification) in
             self.BPMLabelLeft.text = BPMTrackLeft

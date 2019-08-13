@@ -58,6 +58,7 @@ class RightHotCuesViewController: UIViewController {
         } else {
             trackRight.currentTime = greenCurrentTime
             trackRight.play()
+            NotificationCenter.default.post(name: Notification.Name.startRotating, object: self)
         }
     }
     
@@ -70,6 +71,7 @@ class RightHotCuesViewController: UIViewController {
         } else {
             trackRight.currentTime = blueCurrentTime
             trackRight.play()
+            NotificationCenter.default.post(name: Notification.Name.startRotating, object: self)
         }
     }
 
@@ -82,6 +84,7 @@ class RightHotCuesViewController: UIViewController {
         } else {
             trackRight.currentTime = pinkCurrentTime
             trackRight.play()
+            NotificationCenter.default.post(name: Notification.Name.startRotating, object: self)
         }
     }
 
@@ -94,6 +97,7 @@ class RightHotCuesViewController: UIViewController {
         } else {
             trackRight.currentTime = yellowCurrentTime
             trackRight.play()
+            NotificationCenter.default.post(name: Notification.Name.startRotating, object: self)
         }
     }
     
