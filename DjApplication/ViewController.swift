@@ -87,8 +87,8 @@ class ViewController: UIViewController {
     @IBAction func playPause(_ sender: Any) {
         if (trackRight.isPlaying) {
             trackRight.pause()
-            RightVinyl.stopRotating()
-            ImageRightLabel.stopRotating()
+            RightVinyl.pauseRotating()
+            ImageRightLabel.pauseRotating()
         } else {
             trackRight.play()
             RightVinyl.startRotating()
