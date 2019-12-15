@@ -7,7 +7,7 @@ should just build your own? Me too!
 ## My first app!
 I was tired of the traditional music mixing applications lacking serious features real DJ controllers have, so I decided to 
 create my own. As a DJ I noticed the lack of features iOS DJ Applications contained compared to actual DJ mixers like my own. 
-Hopping headfirst into Swift and iOS development, I gave xCode a shot and loved the process. 
+Hopping headfirst into Swift and iOS development, I gave xCode a shot and loved the process. (Built for iPhone 8 because I'm broke and don't have an X 😅)
 
 ## Features:
 • Choose from a list of songs to mix with
