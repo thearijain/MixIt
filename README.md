@@ -11,9 +11,13 @@ Hopping headfirst into Swift and iOS development, I gave xCode a shot and loved 
 
 ## Features:
 • Choose from a list of songs to mix with
+
 • Set a loop using the loop page to get a cleaner mix
+
 • Set up to four cue points within the songs to jump around the track easier
+
 • Access a sampler with four different sounds to overlay your mix with
+
 • Use the crossfader to jump from deck to deck to get that perfect mix
 
 
