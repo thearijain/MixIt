@@ -41,7 +41,7 @@ class LeftLoopViewController: UIViewController {
     
     @IBAction func outButton(_ sender: Any) {
         if (outButtonPressedLeft == false && inButtonPressedLeft == true) {
-            OutLoopTime = trackLeft.currentTime
+            OutLoopTimeLeft = trackLeft.currentTime
             outButtonPressedLeft = true
             outButtonColor.setImage(UIImage(named: "OUT-PRESSED"), for: .normal)
         }
