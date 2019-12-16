@@ -9,7 +9,12 @@ I was tired of the traditional music mixing applications lacking serious feature
 create my own. As a DJ I noticed the lack of features iOS DJ Applications contained compared to actual DJ mixers like my own. 
 Hopping headfirst into Swift and iOS development, I gave xCode a shot and loved the process. (Built for iPhone 8 because I'm broke and don't have an X 😅)
 
+
+
 ## Features:
+
+<img src="https://github.com/thearijain/MixIt/blob/master/ReadMePictures/Simulator%20Screen%20Shot%20-%20iPhone%208%20-%202019-12-15%20at%2018.35.07.png" width="500" height="280" img align="right">
+
 • Choose from a list of songs to mix with
 
 • Set a loop using the loop page to get a cleaner mix
