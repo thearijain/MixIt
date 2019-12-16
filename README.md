@@ -30,7 +30,7 @@ Hopping headfirst into Swift and iOS development, Komal([@kshriv](https://github
 
 
 ## Demo! 
-[![Hover!](https://github.com/kshriv/MixIt/blob/master/ReadMePictures/vidprev.png)](https://www.youtube.com/watch?v=z2RAjdcYjiU&list=UUFpNWktrUFJzL9poywnl7uw&index=1)
+[![Hover!](https://github.com/kshriv/MixIt/blob/master/ReadMePictures/vidprev.png)](https://www.youtube.com/watch?v=z2RAjdcYjiU)
 
 
 
