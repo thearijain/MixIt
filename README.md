@@ -5,7 +5,7 @@ Ever found yourself on the app store trying to find a DJ app only to realize the
 should just build your own? Us too! 
 
 ## My first app!
-Traditional music mixing applications lacking serious features real DJ controllers have, so we decided to 
+Traditional music mixing applications lack serious features real DJ controllers have, so we decided to 
 create our own. 
 
 Hey I'm Ari! As a DJ I noticed the lack of features iOS DJ Applications contained compared to actual DJ mixers like my own. 
