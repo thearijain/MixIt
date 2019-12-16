@@ -54,6 +54,13 @@ class ViewController: UIViewController {
         catch {
             print("error")
         }
+        //Gives trackLeft an empty audio file to start with
+        do {
+            trackLeft = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "emptyaudio", ofType: "mp3")!))
+            trackLeft.prepareToPlay() }
+        catch {
+            print("error")
+        }
         
         //Right waveform slider
         WaveformSliderRight.maximumValue = Float(trackRight.duration)
@@ -111,8 +118,8 @@ class ViewController: UIViewController {
     @IBAction func playPause(_ sender: Any) {
         if (trackRight.isPlaying) {
             trackRight.pause()
-            RightVinyl.stopRotating()
-            ImageRightLabel.stopRotating()
+            RightVinyl.pauseRotating()
+            ImageRightLabel.pauseRotating()
         } else {
             trackRight.play()
             RightVinyl.startRotating()
@@ -124,8 +131,8 @@ class ViewController: UIViewController {
     @IBAction func playPauseTrackLeft(_ sender: Any) {
         if (trackLeft.isPlaying) {
             trackLeft.pause()
-            LeftVinyl.stopRotating()
-            ImageLeftLabel.stopRotating()
+            LeftVinyl.pauseRotating()
+            ImageLeftLabel.pauseRotating()
         } else {
             trackLeft.play()
             LeftVinyl.startRotating()

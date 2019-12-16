@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="landscape" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -284,7 +286,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mc6-jl-U1I">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="624"/>
+                                <rect key="frame" x="0.0" y="20" width="667" height="604"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTJ-Dj-b5b">
                                         <rect key="frame" x="0.0" y="0.0" width="667" height="607.5"/>
@@ -695,7 +697,7 @@
                         <outlet property="TrackLeftSlider" destination="tEY-pV-si7" id="ghg-Hh-Q58"/>
                         <outlet property="TrackRightLabel" destination="kGh-WD-vVE" id="hHv-qi-3xL"/>
                         <outlet property="TrackRightSlider" destination="8Ni-pb-d0h" id="9PO-ka-3py"/>
-                        <outlet property="WaveformSliderLeft" destination="r2O-gj-2QJ" id="iNh-ad-Plb"/>
+                        <outlet property="WaveformSliderLeft" destination="r2O-gj-2QJ" id="g5N-92-ZVv"/>
                         <outlet property="WaveformSliderRight" destination="vvr-wb-2Ue" id="UcT-CI-5Ss"/>
                     </connections>
                 </viewController>
@@ -972,7 +974,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nw4-lt-rth">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="624"/>
+                                <rect key="frame" x="0.0" y="20" width="667" height="604"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ZK-Iz-147">
                                         <rect key="frame" x="0.0" y="0.0" width="667" height="607.5"/>
