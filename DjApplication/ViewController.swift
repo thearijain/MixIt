@@ -131,8 +131,8 @@ class ViewController: UIViewController {
     @IBAction func playPauseTrackLeft(_ sender: Any) {
         if (trackLeft.isPlaying) {
             trackLeft.pause()
-            LeftVinyl.stopRotating()
-            ImageLeftLabel.stopRotating()
+            LeftVinyl.pauseRotating()
+            ImageLeftLabel.pauseRotating()
         } else {
             trackLeft.play()
             LeftVinyl.startRotating()
