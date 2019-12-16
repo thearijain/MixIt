@@ -31,7 +31,6 @@ class SamplerPopupViewController: UIViewController {
         audioPlayer.play()
     }
     
-    
     //Plays the Airhorn from the sampler
     @IBAction func playAirHorn(_ sender: Any) {
         do {
@@ -88,10 +87,5 @@ class SamplerPopupViewController: UIViewController {
     @IBAction func closeSamplerOverlay4(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
-    
-    
-    
-    
-    
+
 }

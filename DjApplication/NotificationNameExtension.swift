@@ -10,6 +10,8 @@ import Foundation
 
 extension Notification.Name {
     
-    static let updateBPM = Notification.Name(rawValue: "updateBPM")
-    static let updateTrack = Notification.Name(rawValue: "updateTrack")
+    static let loadRightTrackData = Notification.Name(rawValue: "loadRightTrackData")
+    static let startRightVinyl = Notification.Name(rawValue: "startRightVinyl")
+    static let loadLeftTrackData = Notification.Name(rawValue: "loadLeftTrackData")
+    static let startRotating = Notification.Name(rawValue: "startRotating")
 }
