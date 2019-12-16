@@ -2,12 +2,14 @@
 [![forthebadge](http://forthebadge.com/images/badges/made-with-swift.svg)](http://forthebadge.com)	[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
 Ever found yourself on the app store trying to find a DJ app only to realize the existing ones are terrible so you 
-should just build your own? Me too! 
+should just build your own? Us too! 
 
 ## My first app!
-I was tired of the traditional music mixing applications lacking serious features real DJ controllers have, so I decided to 
-create my own. As a DJ I noticed the lack of features iOS DJ Applications contained compared to actual DJ mixers like my own. 
-Hopping headfirst into Swift and iOS development, I gave xCode a shot and loved the process. (Built for iPhone 8 because I'm broke and don't have an X 😅)
+Traditional music mixing applications lacking serious features real DJ controllers have, so we decided to 
+create our own. 
+
+Hey I'm Ari! As a DJ I noticed the lack of features iOS DJ Applications contained compared to actual DJ mixers like my own. 
+Hopping headfirst into Swift and iOS development, Komal(@kshriv) and I gave xCode a shot and loved the process. (Built for iPhone 8 because I'm broke and don't have an X 😅)
 
 
 
