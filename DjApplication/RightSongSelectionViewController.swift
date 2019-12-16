@@ -14,6 +14,8 @@ var trackRight = AVAudioPlayer()
 var audioSessionRight = AVAudioSession.sharedInstance()
 var songNameTrackRight = ""
 var BPMTrackRight = ""
+var songImageRight = ""
+var waveformImageRight = ""
 
 
 class RightSongSelectionViewController: UIViewController {
@@ -22,7 +24,6 @@ class RightSongSelectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     //Loads the song Forbidden Voices x Martin Garrix
@@ -39,12 +40,15 @@ class RightSongSelectionViewController: UIViewController {
         catch {
             print("there has been an error")
         }
-        //Updates BPM and closes overlay
+        //Loads right track data onto mainVC
         BPMTrackRight = "128"
         songNameTrackRight = "Forbidden Voices x Martin Garrix"
-        NotificationCenter.default.post(name: Notification.Name.updateBPM, object: self)
-        NotificationCenter.default.post(name: Notification.Name.updateTrack, object: self)
+        songImageRight = "forbiddenv"
+        waveformImageRight = "ForbiddenVWaveform"
+        NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
+        //Resets the Hot Cues
+        resetHotCues()
     }
     
     //Loads the song Secrets x Tiesto
@@ -61,12 +65,15 @@ class RightSongSelectionViewController: UIViewController {
         catch {
             print("there has been an error")
         }
-        //Updates BPM and closes overlay
+        //Loads right track data onto mainVC
         BPMTrackRight = "128"
         songNameTrackRight = "Secrets x Tiesto"
-        NotificationCenter.default.post(name: Notification.Name.updateBPM, object: self)
-        NotificationCenter.default.post(name: Notification.Name.updateTrack, object: self)
+        songImageRight = "secrets"
+        waveformImageRight = "SecretsWaveform"
+        NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
+        //Resets the Hot Cues
+        resetHotCues()
     }
     
     //Loads the song Pursuit of Happiness x Steve Aoki
@@ -83,12 +90,15 @@ class RightSongSelectionViewController: UIViewController {
         catch {
             print("there has been an error")
         }
-        //Updates BPM and closes overlay
+        //Loads right track data onto mainVC
         BPMTrackRight = "120"
         songNameTrackRight = "Pursuit of Happiness x Steve Aoki"
-        NotificationCenter.default.post(name: Notification.Name.updateBPM, object: self)
-        NotificationCenter.default.post(name: Notification.Name.updateTrack, object: self)
+        songImageRight = "pursuit"
+        waveformImageRight = "PursuitWaveform"
+        NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
+        //Resets the Hot Cues
+        resetHotCues()
     }
     
     //Loads the song Purple Lamborghini x Skrillex
@@ -105,12 +115,15 @@ class RightSongSelectionViewController: UIViewController {
         catch {
             print("there has been an error")
         }
-        //Updates BPM and closes overlay
+        //Loads right track data onto mainVC
         BPMTrackRight = "147"
         songNameTrackRight = "Purple Lamborghini x Skrillex"
-        NotificationCenter.default.post(name: Notification.Name.updateBPM, object: self)
-        NotificationCenter.default.post(name: Notification.Name.updateTrack, object: self)
+        songImageRight = "purplelambo"
+        waveformImageRight = "PurpleLamboWaveform"
+        NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
+        //Resets the Hot Cues
+        resetHotCues()
     }
     
     //Loads the song DJ Got Us Fallin In Love Again x Usher
@@ -127,12 +140,15 @@ class RightSongSelectionViewController: UIViewController {
         catch {
             print("there has been an error")
         }
-        //Updates BPM and closes overlay
+        //Loads right track data onto mainVC
         BPMTrackRight = "121"
         songNameTrackRight = "DJ Got Us Fallin In Love Again x Usher"
-        NotificationCenter.default.post(name: Notification.Name.updateBPM, object: self)
-        NotificationCenter.default.post(name: Notification.Name.updateTrack, object: self)
+        songImageRight = "usher"
+        waveformImageRight = "DjGotUsWaveform"
+        NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
+        //Resets the Hot Cues
+        resetHotCues()
     }
     
     //Loads Sexy Bitch x David Guetta
@@ -149,12 +165,15 @@ class RightSongSelectionViewController: UIViewController {
         catch {
             print("there has been an error")
         }
-        //Updates BPM and closes overlay
+        //Loads right track data onto mainVC
         BPMTrackRight = "130"
         songNameTrackRight = "Sexy Bitch x David Guetta"
-        NotificationCenter.default.post(name: Notification.Name.updateBPM, object: self)
-        NotificationCenter.default.post(name: Notification.Name.updateTrack, object: self)
+        songImageRight = "sexyb"
+        waveformImageRight = "SexyBitchWaveform"
+        NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
+        //Resets the Hot Cues
+        resetHotCues()
     }
     
     //Loads Febreze x Jack U
@@ -171,12 +190,15 @@ class RightSongSelectionViewController: UIViewController {
         catch {
             print("there has been an error")
         }
-        //Updates BPM and closes overlay
+        //Loads right track data onto mainVC
         BPMTrackRight = "150"
         songNameTrackRight = "Febreze x Jack U"
-        NotificationCenter.default.post(name: Notification.Name.updateBPM, object: self)
-        NotificationCenter.default.post(name: Notification.Name.updateTrack, object: self)
+        songImageRight = "febreze"
+        waveformImageRight = "FebrezeWaveform"
+        NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
+        //Resets the Hot Cues
+        resetHotCues()
     }
     
     //Loads Yeah x Usher
@@ -193,12 +215,15 @@ class RightSongSelectionViewController: UIViewController {
         catch {
             print("there has been an error")
         }
-        //Updates BPM and closes overlay
+        //Loads right track data onto mainVC
         BPMTrackRight = "105"
         songNameTrackRight = "Yeah x Usher"
-        NotificationCenter.default.post(name: Notification.Name.updateBPM, object: self)
-        NotificationCenter.default.post(name: Notification.Name.updateTrack, object: self)
+        songImageRight = "yeah"
+        waveformImageRight = "YeahWaveform"
+        NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
+        //Resets the Hot Cues
+        resetHotCues()
     }
     
     //Loads Magenta Riddim x DJ Snake
@@ -215,12 +240,15 @@ class RightSongSelectionViewController: UIViewController {
         catch {
             print("there has been an error")
         }
-        //Updates BPM and closes overlay
+        //Loads right track data onto mainVC
         BPMTrackRight = "102"
         songNameTrackRight = "Magenta Riddim x DJ Snake"
-        NotificationCenter.default.post(name: Notification.Name.updateBPM, object: self)
-        NotificationCenter.default.post(name: Notification.Name.updateTrack, object: self)
+        songImageRight = "magentariddim"
+        waveformImageRight = "MagentaRiddimWaveform"
+        NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
+        //Resets the Hot Cues
+        resetHotCues()
     }
     
     //Loads Get Low x Dillion Francis
@@ -237,11 +265,15 @@ class RightSongSelectionViewController: UIViewController {
         catch {
             print("there has been an error")
         }
-        //Updates BPM and closes overlay
+        //Loads right track data onto mainVC
         BPMTrackRight = "101"
         songNameTrackRight = "Get Low x Dillion Francis"
-        NotificationCenter.default.post(name: Notification.Name.updateBPM, object: self)
+        songImageRight = "getlow"
+        waveformImageRight = "GetLowWaveform"
+        NotificationCenter.default.post(name: Notification.Name.loadRightTrackData, object: self)
         dismiss(animated: true, completion: nil)
+        //Resets the Hot Cues
+        resetHotCues()
     }
     
     //Top right X button
