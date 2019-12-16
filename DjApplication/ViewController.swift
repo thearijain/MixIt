@@ -54,14 +54,21 @@ class ViewController: UIViewController {
         catch {
             print("error")
         }
+        //Gives trackLeft an empty audio file to start with
+        do {
+            trackLeft = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "emptyaudio", ofType: "mp3")!))
+            trackLeft.prepareToPlay() }
+        catch {
+            print("error")
+        }
         
         //Right waveform slider
         WaveformSliderRight.maximumValue = Float(trackRight.duration)
         WaveformSliderRight.value = 0
         
         //Left waveform slider
-        //WaveformSliderLeft.maximumValue = Float(trackLeft.duration)
-        //WaveformSliderLeft.value = 0
+        WaveformSliderLeft.maximumValue = Float(trackLeft.duration)
+        WaveformSliderLeft.value = 0
 
         //Loads right track data onto mainVC, Notification Catcher
         NotificationCenter.default.addObserver(forName: .loadRightTrackData, object: nil, queue: OperationQueue.main) { (notification) in
@@ -90,21 +97,21 @@ class ViewController: UIViewController {
             trackLeft.volume = 0.5
             self.ImageLeftLabel.image = UIImage(named: songImageLeft)
             self.LeftWaveform.image = UIImage(named: waveformImageLeft)
-//            self.WaveformSliderLeft.maximumValue = Float(trackLeft.duration)
-//            self.WaveformSliderLeft.value = 0
+            self.WaveformSliderLeft.maximumValue = Float(trackLeft.duration)
+            self.WaveformSliderLeft.value = 0
         }
         
         //Sets attributes for the WaveformSliderRight
         WaveformSliderRight.setThumbImage(UIImage(named: "WaveformSlider"), for: .normal)
         
         //Sets attributes for the WaveformSliderLeft
-        //WaveformSliderLeft.setThumbImage(UIImage(named: "WaveformSlider"), for: .normal)
+        WaveformSliderLeft.setThumbImage(UIImage(named: "WaveformSlider"), for: .normal)
 
         //This is supposed to make the slider move as the song is playing, breaks build when outside loop
         //Right waveform slider
         Timer.scheduledTimer(timeInterval: 0.00001, target: self, selector: #selector(ViewController.updateWaveformSliderRight) , userInfo: nil, repeats: true)
         //Left waveform slider
-//        Timer.scheduledTimer(timeInterval: 0.00001, target: self, selector: #selector(ViewController.updateWaveformSliderLeft) , userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: 0.00001, target: self, selector: #selector(ViewController.updateWaveformSliderLeft) , userInfo: nil, repeats: true)
     }
     
     //Plays and pauses the trackRight song
@@ -185,9 +192,9 @@ class ViewController: UIViewController {
     }
     
     //Makes sure that the left waveform slider continuously moves
-//    @objc func updateWaveformSliderLeft() {
-//        WaveformSliderLeft.value = Float(trackLeft.currentTime)
-//    }
+    @objc func updateWaveformSliderLeft() {
+        WaveformSliderLeft.value = Float(trackLeft.currentTime)
+    }
     
 }
 
