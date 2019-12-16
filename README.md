@@ -4,7 +4,7 @@
 Ever found yourself on the app store trying to find a DJ app only to realize the existing ones are terrible so you 
 should just build your own? Us too! 
 
-## My first app!
+## Our first app!
 Traditional music mixing applications lack serious features real DJ controllers have, so we decided to 
 create our own. 
 
